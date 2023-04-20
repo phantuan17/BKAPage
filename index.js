@@ -15,12 +15,7 @@ app.use(express.urlencoded({
 }));
 
 app.get('/', (req, res) => {
-    res.redirect(301, 'https://www.facebook.com/bkacademy.edu.vn');
-})
-
-
-app.get('/hoclaptrinh', (req, res) => {
-    res.sendFile(path.join(__dirname) + '/public/hoclaptrinh.html')
+    res.sendFile(path.join(__dirname) + '/public/homepage.html')
 })
 
 
