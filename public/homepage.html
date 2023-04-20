@@ -38,11 +38,42 @@
     </div>
 
     <div id="add" class="imgContent"></div>
-    <div id="aboutMath" class="imgContent"></div>
+    <div id="goToMap">
+        Chỉ đường bằng <br>
+        Ứng dụng Bản đồ
+    </div>
+    <div id="aboutMath" class="imgContent" style="position: relative;">
+
+    </div>
+    <div class="goToCourse">
+        <div id="goToMath">
+            Tìm hiểu thêm
+        </div>
+    </div>
     <div id="aboutDev" class="imgContent"></div>
+    <div class="goToCourse">
+        <div id="goToDev">
+            Tìm hiểu thêm
+        </div>
+    </div>
     <div id="teamIntro" class="imgContent"></div>
+    <div class="goToRes">
+        <div class="goToResBtn" style="width: 40%; aspect-ratio: 377/90;">
+            Đăng ký ngay
+        </div>
+    </div>
     <div id="teachingMethod" class="imgContent"></div>
+    <div class="goToRes">
+        <div class="goToResBtn" style="width: 55%; aspect-ratio: 529/90;">
+            Ôn thi học kỳ II miễn phí
+        </div>
+    </div>
     <div id="aboutToroticCourse" class="imgContent"></div>
+    <div class="goToRes">
+        <div class="goToResBtn" style="width: 55%; aspect-ratio: 529/124;">
+            Học thử miễn phí <br> Lập trình Robot
+        </div>
+    </div>
     <div id="registerCourse" class="imgContent"></div>
     <div id="submitForm2">
         <div class="submitForm" style="aspect-ratio: 876/1100;">
@@ -133,6 +164,25 @@
         $("#sucessAl").hide();
     })
 
+    $("#goToMap").on("click", function (event) {
+        window.open("https://goo.gl/maps/WM7v2ZgXipF46Cu68", "_blank");
+    })
+    $("#goToMath").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#teachingMethod").offset().top
+        }, 1000);
+    })
+
+    $("#goToDev").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#aboutToroticCourse").offset().top
+        }, 1000);
+    })
+    $(".goToResBtn").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#submitForm2").offset().top
+        }, 1000);
+    })
 </script>
 
 </html>
