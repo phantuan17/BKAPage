@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+var favicon = require('serve-favicon')
 
 const app = express()
 const port = process.env.port || 8080
@@ -8,6 +9,7 @@ const port = process.env.port || 8080
 app.set('views', path.join(__dirname, 'public'))
 
 app.use(express.static('public'))
+app.use(favicon(path.join(__dirname, 'public', 'logo.ico')))
 
 app.use(express.json());
 app.use(express.urlencoded({
@@ -15,12 +17,7 @@ app.use(express.urlencoded({
 }));
 
 app.get('/', (req, res) => {
-    res.redirect(301, 'https://www.facebook.com/bkacademy.edu.vn');
-})
-
-
-app.get('/hoclaptrinh', (req, res) => {
-    res.sendFile(path.join(__dirname) + '/public/hoclaptrinh.html')
+    res.sendFile(path.join(__dirname) + '/public/homepage.html')
 })
 
 

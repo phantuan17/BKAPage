@@ -1,0 +1,462 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'FS Magistral';
+    src: url('FSMagistralBoldItalic.woff2') format('woff2'),
+        url('FSMagistralBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FS Magistral';
+    src: url('FSMagistralBoldItalic.woff2') format('woff2'),
+        url('FSMagistralBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    margin: auto;
+}
+
+.imgContent {
+    width: 100%;
+}
+
+#goToMap {
+    width: 50%;
+    aspect-ratio: 485/113;
+    margin: auto;
+    margin-bottom: 6%;
+    padding-top: 1.35%;
+    font-size: 35px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
+    border-radius: 60px;
+}
+
+.goToCourse {
+
+    position: absolute;
+    width: 960px;
+    margin-top: -140px;
+    font-size: 35px;
+
+}
+
+#goToMath {
+    position: relative;
+    width: 32%;
+    margin-left: 64%;
+    aspect-ratio: 300/80;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 100%;
+    color: #272660;
+    background-color: white;
+    text-align: center;
+    padding-top: 1.8%;
+    border-radius: 42px;
+
+}
+
+#goToDev {
+    position: relative;
+    width: 32%;
+    margin-left: 64%;
+    aspect-ratio: 300/80;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 100%;
+    color: #FFA943;
+    background-color: white;
+    text-align: center;
+    padding-top: 1.8%;
+    border-radius: 42px;
+}
+
+.goToRes {
+    position: absolute;
+    width: 960px;
+    margin-top: -180px;
+    font-size: 35px;
+}
+
+.goToResBtn {
+    margin: auto;
+    padding-top: 2.3%;
+    font-size: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
+    height: 9.3%;
+    border-radius: 60px;
+}
+
+#submitForm1 {
+    width: 960px;
+    margin-top: -239px;
+    position: absolute;
+}
+
+#submitForm2 {
+    width: 960px;
+    margin-top: -332px;
+    margin-bottom: 66px;
+}
+
+.submitForm {
+    margin-left: 5%;
+    width: 90%;
+    aspect-ratio: 876/1054;
+    position: relative;
+    font-size: 50px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 32px 8px rgba(0, 0, 0, 0.25);
+    padding-top: 8%;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.submitTitle {
+    position: relative;
+    color: #F08234;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.textField {
+    position: relative;
+    aspect-ratio: 720/106;
+    font-size: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4.8%;
+    background: #F0F0F0;
+    padding-left: 2.1%;
+    border-radius: 10px;
+    border: none;
+}
+
+.checkList {
+    margin-left: 13.5%;
+    margin-top: 6.5%;
+}
+
+.form-control {
+    display: grid;
+    grid-template-columns: 13% auto;
+    font-size: 70%;
+    line-height: 2;
+    color: #666666;
+    margin-bottom: 2.2%;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    height: 66%;
+    aspect-ratio: 1;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    background-color: #F0F0F0;
+    color: #FFB112;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #FFB112;
+    background-color: CanvasText;
+    color: #FFB112;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.submitButton {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
+    border-radius: 60px;
+    border: none;
+    aspect-ratio: 724/113;
+    font-size: 100%;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#submitButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#alert {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#loadingAl {
+    position: relative;
+    margin: auto;
+    margin-top: 10%;
+    padding-top: 62px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 730px;
+    aspect-ratio: 730/500;
+    background-color: white;
+    box-shadow: 0px 4px 17px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.loader {
+    position: relative;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    margin-left: 35%;
+    margin-top: 10%;
+    width: 30%;
+    aspect-ratio: 1/1;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#sucessAl {
+    margin: auto;
+    margin-top: 10%;
+    padding-top: 62px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 730px;
+    aspect-ratio: 730/500;
+    background-color: white;
+    box-shadow: 0px 4px 17px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+#alBtn {
+    margin: auto;
+    margin-top: 20px;
+    width: 260px;
+    aspect-ratio: 260/85;
+    background: #4FBB84;
+    border-radius: 50px;
+    padding-top: 10px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width:960px) {
+    body {
+        width: 960px;
+    }
+
+    #hook {
+        content: url("../media/hook.png");
+    }
+
+    #add {
+        content: url("../media/add.png");
+    }
+
+    #aboutMath {
+        content: url("../media/aboutMath.png");
+    }
+
+    #aboutDev {
+        content: url("../media/aboutDev.png");
+    }
+
+    #teamIntro {
+        content: url("../media/teamIntro.png");
+    }
+
+    #teachingMethod {
+        content: url("../media/teachingMethod.png");
+    }
+
+    #aboutToroticCourse {
+        content: url("../media/aboutToroticCourse.png");
+    }
+
+    #registerCourse {
+        content: url("../media/registerCourse.png");
+    }
+
+    #footer {
+        content: url("../media/footer.png");
+    }
+}
+
+
+/* CSS Mobile */
+@media only screen and (max-width:959px) {
+    body {
+        margin: 0px;
+    }
+
+    #hook {
+        content: url("../media/hook.png");
+    }
+
+    #submitForm1 {
+        width: 100%;
+        margin-top: -25%;
+    }
+
+    #add {
+        content: url("../media/add.png");
+    }
+
+    #aboutMath {
+        content: url("../media/aboutMath.png");
+    }
+
+    #aboutDev {
+        content: url("../media/aboutDev.png");
+    }
+
+    #teamIntro {
+        content: url("../media/teamIntro.png");
+    }
+
+    #teachingMethod {
+        content: url("../media/teachingMethod.png");
+    }
+
+    #aboutToroticCourse {
+        content: url("../media/aboutToroticCourse.png");
+    }
+
+    #registerCourse {
+        content: url("../media/registerCourse.png");
+    }
+
+    #submitForm2 {
+        width: 100%;
+        margin-top: -34.5%;
+        margin-bottom: 6.9%;
+    }
+
+    #footer {
+        content: url("../media/footer.png");
+    }
+
+    #goToMap {
+        font-size: 3.64vw;
+        border-radius: 6.25vw;
+    }
+
+    .goToCourse {
+        width: 100%;
+        margin-top: -14.6%;
+        font-size: 3.6vw;
+    }
+
+    #goToMath {
+        border-radius: 4.3vw;
+    }
+
+    #goToDev {
+        border-radius: 4.3vw;
+    }
+
+    .goToRes {
+        width: 100%;
+        margin-top: -18.75%;
+        font-size: 3.6vw;
+    }
+
+    .goToResBtn {
+        border-radius: 6.25vw;
+    }
+
+    #loadingAl {
+        margin-top: 55%;
+        padding-top: 6.45vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        width: 75vw;
+        box-shadow: 0px 0.41vw 1.77vw 0.41vw rgba(0, 0, 0, 0.25);
+        border-radius: 5.2vw;
+        font-size: 5.2vw;
+    }
+
+    #sucessAl {
+        margin-top: 55%;
+        padding-top: 6.45vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        width: 75vw;
+        box-shadow: 0px 0.41vw 1.77vw 0.41vw rgba(0, 0, 0, 0.25);
+        border-radius: 5.2vw;
+        font-size: 5.2vw;
+    }
+
+    #alBtn {
+        margin-top: 3vw;
+        width: 27vw;
+        border-radius: 5.2vw;
+        padding-top: 1vw;
+        font-size: 5.2vw;
+    }
+
+    .submitForm {
+        font-size: 5.2vw;
+        border-radius: 2.6vw;
+        box-shadow: 0vw 1.46vw 3.33vw 0.83vw rgba(0, 0, 0, 0.25);
+    }
+
+    .textField {
+        border-radius: 1.06vw;
+    }
+}

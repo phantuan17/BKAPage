@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>BK Academy</title>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+    </script>
+
+</head>
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap"
+    rel="stylesheet">
+
+<body>
+
+    <div id="hook" class="imgContent"></div>
+    <div id="submitForm1">
+        <div class="submitForm">
+            <div class="submitTitle">ĐĂNG KÝ NHẬN TƯ VẤN</div>
+            <input type="text" id="fname" class="textField" placeholder="Họ tên học sinh">
+            <input type="text" id="fname" class="textField" placeholder="Con đang học lớp mấy?">
+            <input type="text" id="fname" class="textField" placeholder="Số điện thoại phụ huynh">
+            <div class="checkList">
+                <label class="form-control">
+                    <input type="checkbox" id="mathTest" value="Bike">
+                    Đánh giá năng lực môn Toán
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="devTest" value="Car">
+                    Học thử lập trình robot
+                </label>
+            </div>
+            <button class="submitButton"> ĐĂNG KÝ NGAY</button>
+        </div>
+    </div>
+
+    <div id="add" class="imgContent"></div>
+    <div id="goToMap">
+        Chỉ đường bằng <br>
+        Ứng dụng Bản đồ
+    </div>
+    <div id="aboutMath" class="imgContent" style="position: relative;">
+
+    </div>
+    <div class="goToCourse">
+        <div id="goToMath">
+            Tìm hiểu thêm
+        </div>
+    </div>
+    <div id="aboutDev" class="imgContent"></div>
+    <div class="goToCourse">
+        <div id="goToDev">
+            Tìm hiểu thêm
+        </div>
+    </div>
+    <div id="teamIntro" class="imgContent"></div>
+    <div class="goToRes">
+        <div class="goToResBtn" style="width: 40%; aspect-ratio: 377/90;">
+            Đăng ký ngay
+        </div>
+    </div>
+    <div id="teachingMethod" class="imgContent"></div>
+    <div class="goToRes">
+        <div class="goToResBtn" style="width: 55%; aspect-ratio: 529/90;">
+            Ôn thi học kỳ II miễn phí
+        </div>
+    </div>
+    <div id="aboutToroticCourse" class="imgContent"></div>
+    <div class="goToRes">
+        <div class="goToResBtn" style="width: 55%; aspect-ratio: 529/124;">
+            Học thử miễn phí <br> Lập trình Robot
+        </div>
+    </div>
+    <div id="registerCourse" class="imgContent"></div>
+    <div id="submitForm2">
+        <div class="submitForm" style="aspect-ratio: 876/1100;">
+            <div class="submitTitle">GIÚP CON GIỎI TOÁN<br> SÁNG TẠO TRONG LẬP TRÌNH</div>
+            <input type="text" id="fname" class="textField" placeholder="Họ tên học sinh">
+            <input type="text" id="fname" class="textField" placeholder="Con đang học lớp mấy?">
+            <input type="text" id="fname" class="textField" placeholder="Số điện thoại phụ huynh">
+            <div class="checkList">
+                <label class="form-control">
+                    <input type="checkbox" id="mathTest" value="Bike">
+                    Đánh giá năng lực môn Toán
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="devTest" value="Car">
+                    Học thử lập trình robot
+                </label>
+            </div>
+            <button class="submitButton"> ĐĂNG KÝ NGAY</button>
+        </div>
+    </div>
+    <div id="footer" class="imgContent"></div>
+
+    <div id="alert" style="display: none;">
+        <div id="sucessAl" style="display: none;">
+            Đăng ký thành công!<br>
+            BK Academy sẽ liên lạc Với anh chị trong thời gian sớm nhất!
+            <div id="alBtn">
+                Đóng
+            </div>
+        </div>
+        <div id="loadingAl" style="display: none;">
+            <div class="loader">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function submitStudent(name, grade, phone, testMath, testDev) {
+        console.log(name);
+        console.log(grade);
+        console.log(phone);
+        console.log(testMath);
+        console.log(testDev);
+        $("#alert").show();
+        $("#loadingAl").show();
+
+        var api = 'https://script.google.com/macros/s/AKfycbz9ImC8C4ifVKrzrrwbmhoKT1Lc4OJkGw2kGPA4V5qJy8JIhh4Uftt7ewKmDvRlYlywQQ/exec'
+
+        api = api + '?name=' + name + '&grade=' + grade + '&phoneNo=' + phone + '&testMath=' + testMath + '&testDev=' + testDev
+
+        fetch(
+            api, {
+            redirect: "follow",
+            method: "POST",
+            headers: {
+                "Content-Type": "text/plain;charset=utf-8",
+            }
+        }).then(res => {
+            $("#loadingAl").hide();
+            $("#sucessAl").show();
+
+        });
+    }
+
+    $(".submitButton").on("click", function (event) {
+        var form = event.currentTarget.parentElement;
+        var collection = form.getElementsByClassName("textField");
+        var name = collection[0].value;
+        var grade = collection[1].value;
+        var phone = collection[2].value;
+        var checklist = form.childNodes[9].getElementsByTagName('label')
+        if (phone == '') {
+            collection[2].style.border = '2px solid red';
+            collection[2].setAttribute("placeholder", "Vui lòng nhập số điện thoại")
+            collection[2].addEventListener("focusout", function () {
+                if (this.value != '') {
+                    this.style.border = 'none'
+                }
+            })
+        }
+        else {
+            submitStudent(name, grade, phone, checklist[0].childNodes[1].checked, checklist[1].childNodes[1].checked)
+        }
+    });
+
+    $("#alBtn").on("click", function (event) {
+        $("#alert").hide();
+        $("#sucessAl").hide();
+    })
+
+    $("#goToMap").on("click", function (event) {
+        window.open("https://goo.gl/maps/WM7v2ZgXipF46Cu68", "_blank");
+    })
+    $("#goToMath").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#teachingMethod").offset().top
+        }, 1000);
+    })
+
+    $("#goToDev").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#aboutToroticCourse").offset().top
+        }, 1000);
+    })
+    $(".goToResBtn").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#submitForm2").offset().top
+        }, 1000);
+    })
+</script>
+
+</html>
