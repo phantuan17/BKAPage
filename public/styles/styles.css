@@ -459,4 +459,5 @@ input[type="checkbox"]:checked::before {
     .textField {
         border-radius: 1.06vw;
     }
+
 }

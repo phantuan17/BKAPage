@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>Dev Page </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<link rel="stylesheet" href="styles/devStyles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,500;1,700&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<body>
+    <img class="image" id="devHook" src="media/devHook.png">
+    <img class="image" id="devCourse" src="media/devCourse.png">
+    <img class="image" id="devPpht" src="media/devPpht.png">
+
+    <div class="submit">
+        <div id="Devsubmit">
+            <div class="txttitle1">Họ tên học sinh</div>
+            <input class="txtfield" type="text" id="name1" name="fname"><br>
+            <div class="txttitle2">Số điện thoại phụ huynh</div>
+            <input class="txtfield" type="text" id="phone1" name="fname"><br>
+            <button class="submitbtn1" id="submitbtn1" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
+        </div>
+    </div>
+
+    <img class="image" id="devStudent" src="media/devStudent.png">
+    <img class="image" id="devRobot" src="media/devRobot.png">
+    <img class="image" id="devModule" src="media/devModule.png">
+    <img class="image" id="devEvent" src="media/devEvent.png">
+    <img class="image" id="devTools" src="media/devTools.png">
+
+    <div style="position: relative;">
+        <img id="videobgr" src="media/devBgrvid.png">
+        <div id="videofold" class="image">
+            <iframe id="videodemo" src="https://www.youtube.com/embed/MC7hAS9Eh8A" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A"> Video 30s demo online - YouTube</a>
+        </div>
+    </div>
+
+    <img class="image" id="devDki" src="media/devDki.png">
+
+    <div class="submit">
+        <div id="Devsubmit">
+            <div class="txttitle1">Họ tên học sinh</div>
+            <input class="txtfield" type="text" id="name2" name="fname"><br>
+            <div class="txttitle2">Số điện thoại phụ huynh</div>
+            <input class="txtfield" type="text" id="phone2" name="fname"><br>
+            <button class="submitbtn2" id="submitbtn2" type="button">ĐĂNG KÝ HỌC THỬ MIỄN PHÍ</button>
+        </div>
+    </div>
+
+    <img class="image" id="devFooter" src="media/devFooter.png" style="margin-top: -10vw;">
+
+    <div class="popup" id="sucpop" style="display: none;">
+        <div id="popupcontent">
+            <h2>Đăng ký thành công! </h2>
+            <h4>BKAca sẽ liên lạc ngay để tư vấn và đặt lịch trải nghiệm cho các con</h4>
+            <button class="button-2">
+                Đóng
+            </button>
+            <div class="xbtn">&#10006</div>
+        </div>
+
+    </div>
+
+    <div class="popup" id="errpop" style="display: none;">
+        <div id="popupcontent">
+            <h2 style="color: red ;">Đăng kí không thành công </h1>
+                <h4>Vui lòng điền đủ thông tin để đăng kí trải nghiệm</h3>
+                    <button class="button-2" style="background-color: rgb(231, 47, 47) ;">
+                        Đóng
+                    </button>
+                    <div class="xbtn">&#10006</div>
+        </div>
+    </div>
+    <div class="popup" id="loadpop" style="display: none;">
+        <div id="popupcontent">
+            <div class="loader"></div>
+        </div>
+
+    </div>
+</body>
+<script>
+    var mediaW = window.innerWidth
+    var formbgrH = $('#formbgr').height();
+
+    $('.submitform').css('padding-top', (mediaW / 100 * 36.8 - formbgrH) / 2)
+
+    var descourh = $('#descour').height();
+    var courdesh = 0
+    if (mediaW > 1024) {
+        courdesh = 1024 / 100 * 47 / 560 * 328;
+    }
+    else {
+        courdesh = mediaW / 100 * 47 / 560 * 328;
+    }
+    console.log(descourh)
+    console.log(courdesh)
+    $('#courdes').css('padding-top', (descourh - courdesh) / 2)
+
+    window.addEventListener('resize', function (event) {
+        var mediaW = window.innerWidth
+        var formbgrH = $('#formbgr').height();
+
+
+        $('.submitform').css('padding-top', (mediaW / 100 * 36.8 - formbgrH) / 2)
+
+
+        var descourh = $('#descour').height();
+        var courdesh = $('#courdes').height();
+        $('#courdes').css('padding-top', (descourh - courdesh) / 2)
+
+    }
+
+    ); function submit(name, phoneNumber) {
+        $("#loadpop").toggle();
+        var api = 'https://script.google.com/macros/s/AKfycbzTgohl4lMb71wlTHMtx3Ufdx0yXh8boNqDWM6DyBsPZdJE9BPbgQzP2coqvUkyofIECA/exec'
+
+        api = api + '?name=' + name + '&phoneNumber=' + phoneNumber
+
+        fetch(
+            api, {
+            redirect: "follow",
+            method: "POST",
+            headers: {
+                "Content-Type": "text/plain;charset=utf-8",
+            }
+        }).then(res => res.json()
+        ).then(data => {
+            $("#loadpop").hide();
+
+            console.log(data)
+            if (data.status == "Done") {
+                $("#sucpop").toggle();
+
+            }
+            if (data.status == "Error") {
+                $("#errpop").toggle();
+
+
+            }
+        });
+    }
+    $("#submitbtn1").on("click", function (event) {
+        var name = $("#name1").val()
+        var phoneNumber = $("#phone1").val()
+        submit(name, phoneNumber)
+    });
+
+    $("#submitbtn2").on("click", function (event) {
+        var name = $("#name2").val()
+        var phoneNumber = $("#phone2").val()
+        submit(name, phoneNumber)
+    });
+
+    $(".button-2").on("click", function (event) {
+        $("#errpop").hide();
+        $("#sucpop").hide();
+    })
+
+    $(".xbtn").on("click", function (event) {
+        $("#errpop").hide();
+        $("#sucpop").hide();
+    })
+</script>
+
+</html>
