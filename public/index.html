@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>BK Academy</title>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+    </script>
+
+</head>
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap"
+    rel="stylesheet">
+<body>
+<img class="imgContent" src="media/hook1.png" alt="hook1">
+<img class="imgContent" src="media/footer.png" alt="footer" style="margin-bottom: -1533px;">
+<div class="imgContent" style="position: relative; margin-top: -25px;">
+    <img class="imgContent" src="media/hook2.png" alt="hook2" >
+        <button id="goMath">
+            Môn toán 
+        </button>
+        <button id="goDev">
+            Lập trình robot 
+        </button>
+</div>
+<img class="imgContent" src="media/add.png" alt="add" style="margin-top: 280px;" >
+<div id="goToMap">
+    Chỉ đường bằng <br>
+    Ứng dụng Bản đồ
+</div>
+</body>
+<script>
+    function submitStudent(name, grade, phone, testMath, testDev) {
+        console.log(name);
+        console.log(grade);
+        console.log(phone);
+        console.log(testMath);
+        console.log(testDev);
+        $("#alert").show();
+        $("#loadingAl").show();
+
+        var api = 'https://script.google.com/macros/s/AKfycbz9ImC8C4ifVKrzrrwbmhoKT1Lc4OJkGw2kGPA4V5qJy8JIhh4Uftt7ewKmDvRlYlywQQ/exec'
+
+        api = api + '?name=' + name + '&grade=' + grade + '&phoneNo=' + phone + '&testMath=' + testMath + '&testDev=' + testDev
+
+        fetch(
+            api, {
+            redirect: "follow",
+            method: "POST",
+            headers: {
+                "Content-Type": "text/plain;charset=utf-8",
+            }
+        }).then(res => {
+            $("#loadingAl").hide();
+            $("#sucessAl").show();
+
+        });
+    }
+    $("#alBtn").on("click", function (event) {
+        $("#alert").hide();
+        $("#sucessAl").hide();
+    })
+
+    $("#goToMap").on("click", function (event) {
+        window.open("https://goo.gl/maps/WM7v2ZgXipF46Cu68", "_blank");
+    })
+    $("#goToMath").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#teachingMethod").offset().top
+        }, 1000);
+    })
+
+    $("#goToDev").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#aboutToroticCourse").offset().top
+        }, 1000);
+    })
+    $(".goToResBtn").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#submitForm2").offset().top
+        }, 1000);
+    })
+</script>
+
+</html>

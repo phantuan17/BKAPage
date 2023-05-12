@@ -14,8 +14,8 @@
 
 @font-face {
     font-family: 'FS Magistral';
-    src: url('FSMagistralBoldItalic.woff2') format('woff2'),
-        url('FSMagistralBoldItalic.woff') format('woff');
+        src: url('FSMagistralBoldItalic.woff2') format('woff2'),
+            url('FSMagistralBoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -26,9 +26,7 @@ body {
 }
 
 .imgContent {
-    position: relative;
-    width: 100%;
-
+    width: 960px;
 }
 
 .goToCourse {
@@ -37,11 +35,10 @@ body {
     margin-top: -140px;
     font-size: 35px;
 }
-
 #goToMap {
+    margin-left: 232px;
     width: 50%;
     aspect-ratio: 485/113;
-    margin: auto;
     margin-bottom: 6%;
     padding-top: 1.35%;
     font-size: 35px;
@@ -52,28 +49,25 @@ body {
     background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
     border-radius: 60px;
 }
-
 #goMath {
     position: absolute;
     width: 384px;
     aspect-ratio: 384/115;
-    margin-left: 0px;
+    margin-left: 0px; 
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 40px;
     line-height: 48.76px;
     align-items: center;
     color: #FFFFFF;
-    background: linear-gradient(86.03deg, #48BBCB -4.1%, #478BC6 91.34%);
-    border-radius: 5.2vw;
+    background: linear-gradient(86.03deg, #48BBCB -4.1%, #478BC6 91.34%);border-radius: 50px;
     filter: drop-shadow(0px 16px 24px rgba(71, 139, 198, 0.8));
     text-align: center;
     padding-top: 0%;
-    left: 82px;
-    top: 509px;
+    left: 82px; 
+    top: 509px; 
     border: none;
 }
-
 #goDev {
     position: absolute;
     width: 384px;
@@ -85,15 +79,13 @@ body {
     line-height: 48.76px;
     align-items: center;
     color: #FFFFFF;
-    background: linear-gradient(86.03deg, #EF7836 -4.1%, #F8B12A 91.34%);
-    border-radius: 5.2vw;
+    background: linear-gradient(86.03deg, #EF7836 -4.1%, #F8B12A 91.34%); border-radius: 50px;
     filter: drop-shadow(0px 16px 24px rgba(246, 167, 44, 0.6));
     text-align: center;
     padding-top: 0%;
-    left: 494px;
-    top: 509px;
+    left: 494px; 
+    top: 509px;  
     border: none;
-
 }
 
 #goToMath {
@@ -130,6 +122,7 @@ body {
 .goToRes {
     position: absolute;
     width: 960px;
+    margin-top: -180px;
     font-size: 35px;
 }
 
@@ -146,11 +139,23 @@ body {
     border-radius: 60px;
 }
 
+#submitForm1 {
+    width: 960px;
+    margin-top: -239px;
+    position: absolute;
+}
+
+#submitForm2 {
+    width: 960px;
+    margin-top: -332px;
+    margin-bottom: 66px;
+}
+
 .submitForm {
-    position: relative;
-    width: 90%;
-    aspect-ratio: 876/888;
     margin-left: 5%;
+    width: 90%;
+    aspect-ratio: 876/1054;
+    position: relative;
     font-size: 50px;
     border-radius: 25px;
     background: #FFFFFF;
@@ -186,10 +191,49 @@ body {
     margin-top: 6.5%;
 }
 
+.form-control {
+    display: grid;
+    grid-template-columns: 13% auto;
+    font-size: 70%;
+    line-height: 2;
+    color: #666666;
+    margin-bottom: 2.2%;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    height: 66%;
+    aspect-ratio: 1;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    background-color: #F0F0F0;
+    color: #FFB112;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #FFB112;
+    background-color: CanvasText;
+    color: #FFB112;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
 .submitButton {
-    position: relative;
+    position: absolute;
     width: 80%;
-    margin-top: 10%;
     margin-left: 10%;
     background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
     border-radius: 60px;
@@ -288,27 +332,19 @@ body {
 
 @media only screen and (min-width:960px) {
     body {
-        width: 960px;
-    }
 
-    #hook {
-        content: url("../media/mathHook.png");
+        width: 960px;
     }
 
     #hook1 {
         content: url("../media/hook1.png");
     }
-
     #hook2 {
         content: url("../media/hook2.png");
     }
 
-    #lotrinh {
-        content: url("../media/lotrinh.png");
-    }
-
-    #loiich {
-        content: url("../media/loich.png");
+    #add {
+        content: url("../media/add.png");
     }
 
     #aboutMath {
@@ -344,11 +380,8 @@ body {
 /* CSS Mobile */
 @media only screen and (max-width:959px) {
     body {
+        width: 100%;
         margin: 0px;
-    }
-
-    #hook {
-        content: url("../media/mathHook.png");
     }
 
     #hook1 {
@@ -364,12 +397,8 @@ body {
         margin-top: -25%;
     }
 
-    #lotrinh {
-        content: url("../media/lotrinh.png");
-    }
-
-    #loiich {
-        content: url("../media/loich.png");
+    #add {
+        content: url("../media/add.png");
     }
 
     #aboutMath {
@@ -409,7 +438,10 @@ body {
     #goToMap {
         font-size: 3.64vw;
         border-radius: 6.25vw;
-
+        width: 50vw;
+        margin-bottom: 6vw;
+        margin-left: 1000px;
+        padding-top: 1.35vw;
     }
 
     .goToCourse {
@@ -417,7 +449,45 @@ body {
         margin-top: -14.6%;
         font-size: 3.6vw;
     }
-
+    #goMath {
+        position: absolute;
+        width: 40vw;
+        aspect-ratio: 384/115;
+        margin-left: 0px; 
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 4.1vw;
+        line-height: 5vw;
+        align-items: center;
+        color: #FFFFFF;
+        background: linear-gradient(86.03deg, #48BBCB -4.1%, #478BC6 91.34%);border-radius: 5.2vw;
+        filter: drop-shadow(0px 1.6vw 2.5vw rgba(71, 139, 198, 0.8));
+        text-align: center;
+        padding-top: 0%;
+        left: 8.5vw; 
+        top: 53vw; 
+        border: none;
+    }
+    #goDev {
+        position: absolute;
+        width: 40vw;
+        aspect-ratio: 384/115;
+        margin-left: 0px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 4.1vw;
+        line-height: 5vw;
+        align-items: center;
+        color: #FFFFFF;
+        background: linear-gradient(86.03deg, #EF7836 -4.1%, #F8B12A 91.34%); border-radius: 5.2vw;
+        filter: drop-shadow(0px 1.6vw 2.5vw rgba(246, 167, 44, 0.6));
+        text-align: center;
+        padding-top: 0%;
+        left: 51.4vw; 
+        top: 53vw;  
+        border: none;
+    }
+    
     #goToMath {
         border-radius: 4.3vw;
     }
@@ -428,6 +498,7 @@ body {
 
     .goToRes {
         width: 100%;
+        margin-top: -18.75%;
         font-size: 3.6vw;
     }
 
@@ -474,29 +545,4 @@ body {
     .textField {
         border-radius: 1.06vw;
     }
-
-<<<<<<< HEAD
-=======
-    #goMath {
-        width: 40vw;
-        font-size: 4.1vw;
-        line-height: 5vw;
-        border-radius: 5.2vw;
-        filter: drop-shadow(0px 1.6vw 2.5vw rgba(71, 139, 198, 0.8));
-        left: 8.5vw;
-        top: 53vw;
-    }
-
-    #goDev {
-        width: 40vw;
-
-        font-size: 4.1vw;
-        line-height: 5vw;
-        border-radius: 5.2vw;
-        filter: drop-shadow(0px 1.6vw 2.5vw rgba(246, 167, 44, 0.6));
-        left: 51.4vw;
-        top: 53vw;
-    }
-
->>>>>>> ef1c01a (Commit trang main cho BK Aca)
 }
