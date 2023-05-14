@@ -112,7 +112,6 @@
         var name = collection[0].value;
         var grade = collection[1].value;
         var phone = collection[2].value;
-        var checklist = form.childNodes[9].getElementsByTagName('label')
         if (phone == '') {
             collection[2].style.border = '2px solid red';
             collection[2].setAttribute("placeholder", "Vui lòng nhập số điện thoại")
@@ -123,7 +122,7 @@
             })
         }
         else {
-            submitStudent(name, grade, phone, checklist[0].childNodes[1].checked, checklist[1].childNodes[1].checked)
+            submitStudent(name, grade, phone, true, false)
         }
     });
 

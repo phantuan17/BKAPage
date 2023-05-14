@@ -55,41 +55,33 @@
 
     <img class="image" id="devFooter" src="media/devFooter.png" style="margin-top: -10vw;">
 
-    <div class="popup" id="sucpop" style="display: none;">
-        <div id="popupcontent">
-            <h2>Đăng ký thành công! </h2>
-            <h4>BKAca sẽ liên lạc ngay để tư vấn và đặt lịch trải nghiệm cho các con</h4>
-            <button class="button-2">
+    <div id="alert" style="display: none;">
+        <div id="sucessAl" style="display: none;">
+            Đăng ký thành công!<br>
+            BK Academy sẽ liên lạc Với anh chị trong thời gian sớm nhất!
+            <div id="alBtn">
                 Đóng
-            </button>
-            <div class="xbtn">&#10006</div>
+            </div>
         </div>
-
-    </div>
-
-    <div class="popup" id="errpop" style="display: none;">
-        <div id="popupcontent">
-            <h2 style="color: red ;">Đăng kí không thành công </h1>
-                <h4>Vui lòng điền đủ thông tin để đăng kí trải nghiệm</h3>
-                    <button class="button-2" style="background-color: rgb(231, 47, 47) ;">
-                        Đóng
-                    </button>
-                    <div class="xbtn">&#10006</div>
+        <div id="loadingAl" style="display: none;">
+            <div class="loader">
+            </div>
         </div>
-    </div>
-    <div class="popup" id="loadpop" style="display: none;">
-        <div id="popupcontent">
-            <div class="loader"></div>
-        </div>
-
     </div>
 </body>
 <script>
-    function submit(name, phoneNumber) {
-        $("#loadpop").toggle();
-        var api = 'https://script.google.com/macros/s/AKfycbzTgohl4lMb71wlTHMtx3Ufdx0yXh8boNqDWM6DyBsPZdJE9BPbgQzP2coqvUkyofIECA/exec'
+    function submitStudent(name, grade, phone, testMath, testDev) {
+        console.log(name);
+        console.log(grade);
+        console.log(phone);
+        console.log(testMath);
+        console.log(testDev);
+        $("#alert").show();
+        $("#loadingAl").show();
 
-        api = api + '?name=' + name + '&phoneNumber=' + phoneNumber
+        var api = 'https://script.google.com/macros/s/AKfycbz9ImC8C4ifVKrzrrwbmhoKT1Lc4OJkGw2kGPA4V5qJy8JIhh4Uftt7ewKmDvRlYlywQQ/exec'
+
+        api = api + '?name=' + name + '&grade=' + grade + '&phoneNo=' + phone + '&testMath=' + testMath + '&testDev=' + testDev
 
         fetch(
             api, {
@@ -98,43 +90,37 @@
             headers: {
                 "Content-Type": "text/plain;charset=utf-8",
             }
-        }).then(res => res.json()
-        ).then(data => {
-            $("#loadpop").hide();
+        }).then(res => {
+            $("#loadingAl").hide();
+            $("#sucessAl").show();
 
-            console.log(data)
-            if (data.status == "Done") {
-                $("#sucpop").toggle();
-
-            }
-            if (data.status == "Error") {
-                $("#errpop").toggle();
-
-
-            }
         });
     }
-    $("#submitbtn1").on("click", function (event) {
-        var name = $("#name1").val()
-        var phoneNumber = $("#phone1").val()
-        submit(name, phoneNumber)
+
+    $(".submitbtn").on("click", function (event) {
+        var form = event.currentTarget.parentElement;
+        var collection = form.getElementsByClassName("txtfield");
+        var name = collection[0].value;
+        var phone = collection[1].value;
+        if (phone == '') {
+            collection[1].style.border = '2px solid red';
+            collection[1].setAttribute("placeholder", "Vui lòng nhập số điện thoại")
+            collection[1].addEventListener("focusout", function () {
+                if (this.value != '') {
+                    this.style.border = 'none'
+                }
+            })
+        }
+        else {
+            submitStudent(name, 'null', phone, false, true)
+        }
     });
 
-    $("#submitbtn2").on("click", function (event) {
-        var name = $("#name2").val()
-        var phoneNumber = $("#phone2").val()
-        submit(name, phoneNumber)
-    });
-
-    $(".button-2").on("click", function (event) {
-        $("#errpop").hide();
-        $("#sucpop").hide();
+    $("#alBtn").on("click", function (event) {
+        $("#alert").hide();
+        $("#sucessAl").hide();
     })
 
-    $(".xbtn").on("click", function (event) {
-        $("#errpop").hide();
-        $("#sucpop").hide();
-    })
 </script>
 
 </html>
