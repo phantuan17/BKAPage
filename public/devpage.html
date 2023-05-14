@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>Dev Page </title>
+    <title>BK Academy </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 </head>
@@ -19,14 +19,12 @@
     <img class="image" id="devCourse" src="media/devCourse.png">
     <img class="image" id="devPpht" src="media/devPpht.png">
 
-    <div class="submit">
-        <div id="Devsubmit">
-            <div class="txttitle1">Họ tên học sinh</div>
-            <input class="txtfield" type="text" id="name1" name="fname"><br>
-            <div class="txttitle2">Số điện thoại phụ huynh</div>
-            <input class="txtfield" type="text" id="phone1" name="fname"><br>
-            <button class="submitbtn1" id="submitbtn1" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
-        </div>
+    <div id="Devsubmit">
+        <div class="txttitle">Họ tên học sinh</div>
+        <input class="txtfield" type="text" id="name1" name="fname"><br>
+        <div class="txttitle">Số điện thoại phụ huynh</div>
+        <input class="txtfield" type="text" id="phone1" name="fname"><br>
+        <button class="submitbtn" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
     </div>
 
     <img class="image" id="devStudent" src="media/devStudent.png">
@@ -47,14 +45,12 @@
 
     <img class="image" id="devDki" src="media/devDki.png">
 
-    <div class="submit">
-        <div id="Devsubmit">
-            <div class="txttitle1">Họ tên học sinh</div>
-            <input class="txtfield" type="text" id="name2" name="fname"><br>
-            <div class="txttitle2">Số điện thoại phụ huynh</div>
-            <input class="txtfield" type="text" id="phone2" name="fname"><br>
-            <button class="submitbtn2" id="submitbtn2" type="button">ĐĂNG KÝ HỌC THỬ MIỄN PHÍ</button>
-        </div>
+    <div id="Devsubmit">
+        <div class="txttitle">Họ tên học sinh</div>
+        <input class="txtfield" type="text" id="name1" name="fname"><br>
+        <div class="txttitle">Số điện thoại phụ huynh</div>
+        <input class="txtfield" type="text" id="phone1" name="fname"><br>
+        <button class="submitbtn" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
     </div>
 
     <img class="image" id="devFooter" src="media/devFooter.png" style="margin-top: -10vw;">
@@ -89,38 +85,7 @@
     </div>
 </body>
 <script>
-    var mediaW = window.innerWidth
-    var formbgrH = $('#formbgr').height();
-
-    $('.submitform').css('padding-top', (mediaW / 100 * 36.8 - formbgrH) / 2)
-
-    var descourh = $('#descour').height();
-    var courdesh = 0
-    if (mediaW > 1024) {
-        courdesh = 1024 / 100 * 47 / 560 * 328;
-    }
-    else {
-        courdesh = mediaW / 100 * 47 / 560 * 328;
-    }
-    console.log(descourh)
-    console.log(courdesh)
-    $('#courdes').css('padding-top', (descourh - courdesh) / 2)
-
-    window.addEventListener('resize', function (event) {
-        var mediaW = window.innerWidth
-        var formbgrH = $('#formbgr').height();
-
-
-        $('.submitform').css('padding-top', (mediaW / 100 * 36.8 - formbgrH) / 2)
-
-
-        var descourh = $('#descour').height();
-        var courdesh = $('#courdes').height();
-        $('#courdes').css('padding-top', (descourh - courdesh) / 2)
-
-    }
-
-    ); function submit(name, phoneNumber) {
+    function submit(name, phoneNumber) {
         $("#loadpop").toggle();
         var api = 'https://script.google.com/macros/s/AKfycbzTgohl4lMb71wlTHMtx3Ufdx0yXh8boNqDWM6DyBsPZdJE9BPbgQzP2coqvUkyofIECA/exec'
 

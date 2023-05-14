@@ -9,17 +9,65 @@ body {
     margin-right: auto;
 }
 
-#dangki {
-    display: none;
+
+#Devsubmit {
+    aspect-ratio: 875/623;
+    background: linear-gradient(52.41deg, #F08134 -2.12%, #F8B12A 94.26%);
+    border-radius: 6vw;
+    margin-left: 4.4%;
+    margin-bottom: 10%;
+    width: 91.2%;
+    padding-top: 5%;
 }
 
-#videodemo {
-    aspect-ratio: 917 / 519;
-    margin-left: 2.5%;
-    margin-top: 23vw;
-    position: absolute;
-    width: 95%;
+.txttitle {
+    width: 82%;
+    aspect-ratio: 718 / 50;
+    margin-left: 9.2%;
+    margin-bottom: 1.5%;
+    font-size: 4vw;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    color: #FFFFFF;
 }
+
+.txtfield {
+    width: 82%;
+    aspect-ratio: 718 / 94;
+    margin-left: 9.2%;
+    margin-bottom: 3%;
+    padding-left: 10px;
+    font-size: 4.2vw;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    color: #000000;
+    border-radius: 2vw;
+    border: none;
+}
+
+
+.submitbtn {
+    width: 82%;
+    aspect-ratio: 712/127;
+    margin-left: 9.2%;
+    margin-top: 3.6%;
+    border: none;
+    background: #4FBB84;
+    border-radius: 5.2vw;
+    font-family: 'Montserrat';
+    font-size: 3.8vw;
+    font-style: italic;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#submitbtn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 
 #videobgr {
     position: absolute;
@@ -32,129 +80,26 @@ body {
     margin: auto;
 }
 
-.submitform {
-    width: 45%;
-    padding-left: 6%;
-    padding-right: 8.5%;
-    padding-top: 7.5%;
-    position: relative;
-    margin: 0%;
-    background-color: #ED1C24;
-}
-
-.submitform2 {
-    position: absolute;
-    aspect-ratio: 507/447;
-    width: 35%;
-    margin-left: 54%;
-    margin-top: 20%;
-    padding-left: 3%;
-    padding-right: 4%;
-    padding-top: 3%;
-    border-radius: 1.38vw;
-    background-color: #ED1C24;
+#videodemo {
+    aspect-ratio: 917 / 519;
+    margin-left: 2.5%;
+    margin-top: 23%;
+    margin-bottom: 1.7%;
+    width: 95%;
 }
 
 #vidurl {
     overflow: auto;
-    position: absolute;
-    width: 67.2vw;
-    margin-top: 13.8vw;
-    margin-left: 15vw;
+    width: 67.2%;
+    margin-left: 15%;
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 700;
-    line-height: 134.4vw;
+    line-height: 5.1vw;
     text-align: center;
     text-decoration-line: underline;
-    font-size: 3vw;
-    color: #000000;
-}
-
-#formbgr {
-    height: 100%;
-    width: 100%;
-}
-
-.txtfield {
-    width: 75vw;
-    aspect-ratio: 718 / 94;
-    margin-left: 8vw;
-    font-size: 4.2vw;
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 500;
-    color: #000000;
-    border-radius: 2vw;
-    border: none;
-}
-
-.txttitle1 {
-    width: 35.7vw;
-    aspect-ratio: 295 / 50;
-    margin-top: 4.5vw;
-    margin-bottom: 1.3vw;
-    font-size: 4vw;
-    margin-left: 8vw;
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 500;
-    color: #FFFFFF;
-}
-
-.txttitle2 {
-    width: 56vw;
-    aspect-ratio: 466 / 50;
-    margin-top: 2.8vw;
-    margin-bottom: 1.3vw;
-    font-size: 4vw;
-    margin-left: 8vw;
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 500;
-    color: #FFFFFF;
-}
-
-.submit {
-    display: flex;
-}
-
-.submitbtn1 {
-    width: 76vw;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-top: 6vw;
-    margin-bottom: 5vw;
-    background: #4FBB84;
-    border-radius: 5.2vw;
-    aspect-ratio: 712/127;
-    font-family: 'Montserrat';
     font-size: 3.8vw;
-    font-style: italic;
-    font-weight: 700;
-    color: #FFFFFF;
-    border: none;
-}
-
-.submitbtn2 {
-    width: 76vw;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-top: 6vw;
-    margin-bottom: 5vw;
-    background: #4FBB84;
-    border-radius: 6.25vw;
-    aspect-ratio: 712/127;
-    font-family: 'Montserrat';
-    font-size: 3.8vw;
-    font-style: italic;
-    font-weight: 700;
-    color: #FFFFFF;
-    border: none;
-}
-
-#submitbtn:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: #000000;
 }
 
 .popup {
@@ -258,12 +203,35 @@ h4 {
     }
 }
 
-#Devsubmit {
-    aspect-ratio: 875/623;
-    background: linear-gradient(52.41deg, #F08134 -2.12%, #F8B12A 94.26%);
-    border-radius: 6vw;
-    margin-left: 4.4vw;
-    margin-right: 4.4vw;
-    margin-bottom: 10vw;
-    width: 91.2vw;
+
+
+/* CSS Destop */
+@media only screen and (min-width:960px) {
+    body {
+        width: 960px;
+        margin: auto;
+    }
+
+    #Devsubmit {
+        border-radius: 58px;
+    }
+
+    .txttitle {
+        font-size: 37px;
+    }
+
+    .txtfield {
+        font-size: 39px;
+        border-radius: 20px;
+    }
+
+    .submitbtn {
+        border-radius: 50px;
+        font-size: 37px;
+    }
+
+    #vidurl {
+        line-height: 49.73px;
+        font-size: 37px;
+    }
 }
