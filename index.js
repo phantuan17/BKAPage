@@ -20,6 +20,14 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname) + '/public/homepage.html')
 })
 
+app.get('/toan-hoc', (req, res) => {
+    res.sendFile(path.join(__dirname) + '/public/toanhoc.html')
+})
+
+app.get('/lap-trinh', (req, res) => {
+    res.sendFile(path.join(__dirname) + '/public/laptrinh.html')
+})
+
 
 app.listen(port, () => {
     console.log(`app listening at PORT: ${port}`)

@@ -17,7 +17,7 @@
 <body>
 
     <div id="hook" class="imgContent"></div>
-    <div style="width: 100%;aspect-ratio: 960/1076;background-color: #272660;padding-top: 7%;">
+    <div id="submitForm1" style="width: 100%;aspect-ratio: 960/1076;background-color: #272660;padding-top: 7%;">
         <div class="submitForm">
             <div class="submitTitle">ĐĂNG KÝ NHẬN TƯ VẤN</div>
             <input type="text" id="fname" class="textField" placeholder="Họ tên học sinh">
@@ -29,13 +29,13 @@
     </div>
     <div id="lotrinh" class="imgContent" style="background-color: #F9F5EA;"></div>
     <div class="goToRes">
-        <div class="goToResBtn" style="width: 40%; aspect-ratio: 377/90;margin-top:-24.68% ;">
+        <div class="goToResBtn" id="goToRes1Btn" style="width: 40%; aspect-ratio: 377/90;margin-top:-24.68% ;">
             Đăng ký ngay
         </div>
     </div>
     <div id="loiich" class="imgContent" style="background-color: #F9F5EA;"></div>
     <div class="goToRes">
-        <div class="goToResBtn" style="width: 40%; aspect-ratio: 377/90;margin-top:-15% ;">
+        <div class="goToResBtn" id="goToRes2Btn" style="width: 40%; aspect-ratio: 377/90;margin-top:-15% ;">
             Đăng ký ngay
         </div>
     </div>
@@ -44,7 +44,7 @@
 
     <div class="goToRes"
         style="margin-top:0% ; position: relative;background-color: #F9F5EA;padding-top:5.5% ;padding-bottom: 13%;">
-        <div class="goToResBtn" style="width: 40%; aspect-ratio: 377/90;">
+        <div class="goToResBtn" id="goToRes3Btn" style="width: 40%; aspect-ratio: 377/90;">
             Đăng ký ngay
         </div>
     </div>
@@ -131,13 +131,19 @@
         $("#alert").hide();
         $("#sucessAl").hide();
     })
-
-
-
-
-    $(".goToResBtn").on("click", function (event) {
+    $("#goToRes3Btn").on("click", function (event) {
         $('html, body').animate({
             scrollTop: $("#submitForm2").offset().top
+        }, 1000);
+    })
+    $("#goToRes2Btn").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#submitForm2").offset().top
+        }, 1000);
+    })
+    $("#goToRes1Btn").on("click", function (event) {
+        $('html, body').animate({
+            scrollTop: $("#submitForm1").offset().top
         }, 1000);
     })
 </script>
