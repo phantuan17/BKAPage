@@ -26,7 +26,9 @@ body {
 }
 
 .imgContent {
+    position: relative;
     width: 100%;
+
 }
 
 #goToMap {
@@ -87,7 +89,6 @@ body {
 .goToRes {
     position: absolute;
     width: 960px;
-    margin-top: -180px;
     font-size: 35px;
 }
 
@@ -104,23 +105,11 @@ body {
     border-radius: 60px;
 }
 
-#submitForm1 {
-    width: 960px;
-    margin-top: -239px;
-    position: absolute;
-}
-
-#submitForm2 {
-    width: 960px;
-    margin-top: -332px;
-    margin-bottom: 66px;
-}
-
 .submitForm {
-    margin-left: 5%;
-    width: 90%;
-    aspect-ratio: 876/1054;
     position: relative;
+    width: 90%;
+    aspect-ratio: 876/888;
+    margin-left: 5%;
     font-size: 50px;
     border-radius: 25px;
     background: #FFFFFF;
@@ -156,49 +145,10 @@ body {
     margin-top: 6.5%;
 }
 
-.form-control {
-    display: grid;
-    grid-template-columns: 13% auto;
-    font-size: 70%;
-    line-height: 2;
-    color: #666666;
-    margin-bottom: 2.2%;
-}
-
-input[type="checkbox"] {
-    appearance: none;
-    margin: 0;
-    font: inherit;
-    color: currentColor;
-    height: 66%;
-    aspect-ratio: 1;
-    border: 0.15em solid currentColor;
-    border-radius: 0.15em;
-    transform: translateY(-0.075em);
-    display: grid;
-    place-content: center;
-    background-color: #F0F0F0;
-    color: #FFB112;
-}
-
-input[type="checkbox"]::before {
-    content: "";
-    width: 1em;
-    height: 1em;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em #FFB112;
-    background-color: CanvasText;
-    color: #FFB112;
-}
-
-input[type="checkbox"]:checked::before {
-    transform: scale(1);
-}
-
 .submitButton {
-    position: absolute;
+    position: relative;
     width: 80%;
+    margin-top: 10%;
     margin-left: 10%;
     background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
     border-radius: 60px;
@@ -301,11 +251,15 @@ input[type="checkbox"]:checked::before {
     }
 
     #hook {
-        content: url("../media/hook.png");
+        content: url("../media/mathHook.png");
     }
 
-    #add {
-        content: url("../media/add.png");
+    #lotrinh {
+        content: url("../media/lotrinh.png");
+    }
+
+    #loiich {
+        content: url("../media/loich.png");
     }
 
     #aboutMath {
@@ -345,7 +299,7 @@ input[type="checkbox"]:checked::before {
     }
 
     #hook {
-        content: url("../media/hook.png");
+        content: url("../media/mathHook.png");
     }
 
     #submitForm1 {
@@ -353,8 +307,12 @@ input[type="checkbox"]:checked::before {
         margin-top: -25%;
     }
 
-    #add {
-        content: url("../media/add.png");
+    #lotrinh {
+        content: url("../media/lotrinh.png");
+    }
+
+    #loiich {
+        content: url("../media/loich.png");
     }
 
     #aboutMath {
@@ -412,7 +370,6 @@ input[type="checkbox"]:checked::before {
 
     .goToRes {
         width: 100%;
-        margin-top: -18.75%;
         font-size: 3.6vw;
     }
 
