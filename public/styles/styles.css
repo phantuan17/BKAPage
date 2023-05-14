@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'FS Magistral';
+    src: url('FSMagistralBoldItalic.woff2') format('woff2'),
+        url('FSMagistralBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FS Magistral';
+    src: url('FSMagistralBoldItalic.woff2') format('woff2'),
+        url('FSMagistralBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    margin: auto;
+}
+
+.imgContent {
+    position: relative;
+    width: 100%;
+
+}
+
+#goToMap {
+    width: 50%;
+    aspect-ratio: 485/113;
+    margin: auto;
+    margin-bottom: 6%;
+    padding-top: 1.35%;
+    font-size: 35px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
+    border-radius: 60px;
+}
+
+#goMath {
+    position: absolute;
+    width: 384px;
+    aspect-ratio: 384/115;
+    margin-left: 0px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48.76px;
+    align-items: center;
+    color: #FFFFFF;
+    background: linear-gradient(86.03deg, #48BBCB -4.1%, #478BC6 91.34%);
+    border-radius: 5.2vw;
+    filter: drop-shadow(0px 16px 24px rgba(71, 139, 198, 0.8));
+    text-align: center;
+    padding-top: 0%;
+    left: 82px;
+    top: 509px;
+    border: none;
+}
+
+#goDev {
+    position: absolute;
+    width: 384px;
+    aspect-ratio: 384/115;
+    margin-left: 0px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48.76px;
+    align-items: center;
+    color: #FFFFFF;
+    background: linear-gradient(86.03deg, #EF7836 -4.1%, #F8B12A 91.34%);
+    border-radius: 5.2vw;
+    filter: drop-shadow(0px 16px 24px rgba(246, 167, 44, 0.6));
+    text-align: center;
+    padding-top: 0%;
+    left: 494px;
+    top: 509px;
+    border: none;
+}
+
+@media only screen and (min-width:960px) {
+    body {
+        width: 960px;
+    }
+
+    #hook1 {
+        content: url("../media/hook1.png");
+    }
+
+    #hook2 {
+        content: url("../media/hook2.png");
+    }
+
+    #footer {
+        content: url("../media/footer.png");
+    }
+}
+
+/* CSS Mobile */
+@media only screen and (max-width:959px) {
+    body {
+        margin: 0px;
+    }
+
+    #hook1 {
+        content: url("../media/hook1.png");
+    }
+
+    #hook2 {
+        content: url("../media/hook2.png");
+    }
+
+    #footer {
+        content: url("../media/footer.png");
+    }
+
+    #goToMap {
+        font-size: 3.64vw;
+        border-radius: 6.25vw;
+    }
+
+    #goToMath {
+        border-radius: 4.3vw;
+    }
+
+    #goMath {
+        width: 40vw;
+        font-size: 4.1vw;
+        line-height: 5vw;
+        border-radius: 5.2vw;
+        filter: drop-shadow(0px 1.6vw 2.5vw rgba(71, 139, 198, 0.8));
+        left: 8.5vw;
+        top: 53vw;
+    }
+
+    #goDev {
+        width: 40vw;
+
+        font-size: 4.1vw;
+        line-height: 5vw;
+        border-radius: 5.2vw;
+        filter: drop-shadow(0px 1.6vw 2.5vw rgba(246, 167, 44, 0.6));
+        left: 51.4vw;
+        top: 53vw;
+    }
+
+}

@@ -53,80 +53,6 @@ body {
     border-radius: 60px;
 }
 
-#goMath {
-    position: absolute;
-    width: 384px;
-    aspect-ratio: 384/115;
-    margin-left: 0px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 48.76px;
-    align-items: center;
-    color: #FFFFFF;
-    background: linear-gradient(86.03deg, #48BBCB -4.1%, #478BC6 91.34%);
-    border-radius: 5.2vw;
-    filter: drop-shadow(0px 16px 24px rgba(71, 139, 198, 0.8));
-    text-align: center;
-    padding-top: 0%;
-    left: 82px;
-    top: 509px;
-    border: none;
-}
-
-#goDev {
-    position: absolute;
-    width: 384px;
-    aspect-ratio: 384/115;
-    margin-left: 0px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 48.76px;
-    align-items: center;
-    color: #FFFFFF;
-    background: linear-gradient(86.03deg, #EF7836 -4.1%, #F8B12A 91.34%);
-    border-radius: 5.2vw;
-    filter: drop-shadow(0px 16px 24px rgba(246, 167, 44, 0.6));
-    text-align: center;
-    padding-top: 0%;
-    left: 494px;
-    top: 509px;
-    border: none;
-
-}
-
-#goToMath {
-    position: relative;
-    width: 32%;
-    margin-left: 64%;
-    aspect-ratio: 300/80;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 100%;
-    color: #272660;
-    background-color: white;
-    text-align: center;
-    padding-top: 1.8%;
-    border-radius: 42px;
-
-}
-
-#goToDev {
-    position: relative;
-    width: 32%;
-    margin-left: 64%;
-    aspect-ratio: 300/80;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 100%;
-    color: #FFA943;
-    background-color: white;
-    text-align: center;
-    padding-top: 1.8%;
-    border-radius: 42px;
-}
-
 .goToRes {
     position: absolute;
     width: 960px;
@@ -351,14 +277,6 @@ body {
         content: url("../media/mathHook.png");
     }
 
-    #hook1 {
-        content: url("../media/hook1.png");
-    }
-
-    #hook2 {
-        content: url("../media/hook2.png");
-    }
-
     #submitForm1 {
         width: 100%;
         margin-top: -25%;
@@ -475,28 +393,5 @@ body {
         border-radius: 1.06vw;
     }
 
-<<<<<<< HEAD
-=======
-    #goMath {
-        width: 40vw;
-        font-size: 4.1vw;
-        line-height: 5vw;
-        border-radius: 5.2vw;
-        filter: drop-shadow(0px 1.6vw 2.5vw rgba(71, 139, 198, 0.8));
-        left: 8.5vw;
-        top: 53vw;
-    }
 
-    #goDev {
-        width: 40vw;
-
-        font-size: 4.1vw;
-        line-height: 5vw;
-        border-radius: 5.2vw;
-        filter: drop-shadow(0px 1.6vw 2.5vw rgba(246, 167, 44, 0.6));
-        left: 51.4vw;
-        top: 53vw;
-    }
-
->>>>>>> ef1c01a (Commit trang main cho BK Aca)
 }
