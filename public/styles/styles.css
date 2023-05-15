@@ -48,7 +48,7 @@ body {
 
 #goMath {
     position: absolute;
-    width: 384px;
+    width: 40%;
     aspect-ratio: 384/115;
     margin-left: 0px;
     font-family: 'Montserrat';
@@ -62,14 +62,14 @@ body {
     filter: drop-shadow(0px 16px 24px rgba(71, 139, 198, 0.8));
     text-align: center;
     padding-top: 0%;
-    left: 82px;
+    left: 8.5%;
     top: 509px;
     border: none;
 }
 
 #goDev {
     position: absolute;
-    width: 384px;
+    width: 40%;
     aspect-ratio: 384/115;
     margin-left: 0px;
     font-family: 'Montserrat';
@@ -83,7 +83,7 @@ body {
     filter: drop-shadow(0px 16px 24px rgba(246, 167, 44, 0.6));
     text-align: center;
     padding-top: 0%;
-    left: 494px;
+    left: 51.4%;
     top: 509px;
     border: none;
 }
@@ -134,23 +134,19 @@ body {
     }
 
     #goMath {
-        width: 40vw;
         font-size: 4.1vw;
         line-height: 5vw;
         border-radius: 5.2vw;
         filter: drop-shadow(0px 1.6vw 2.5vw rgba(71, 139, 198, 0.8));
-        left: 8.5vw;
         top: 53vw;
     }
 
     #goDev {
-        width: 40vw;
 
         font-size: 4.1vw;
         line-height: 5vw;
         border-radius: 5.2vw;
         filter: drop-shadow(0px 1.6vw 2.5vw rgba(246, 167, 44, 0.6));
-        left: 51.4vw;
         top: 53vw;
     }
 
