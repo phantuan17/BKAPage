@@ -130,6 +130,43 @@ body {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+.detail-item {
+    width: 90%;
+    margin: auto;
+    padding: auto;
+    padding-top: 4%;
+    aspect-ratio: 880/136;
+    background: #272660;
+    box-shadow: 0px 11px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito';
+    font-weight: 900;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+
+}
+
+.dot {
+    height: 35px;
+    width: 35px;
+    margin: 0 2px;
+    background-color: #CBCBCB;
+    border: 4px solid #A29B9B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: white;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
 #alert {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -314,12 +351,6 @@ body {
         content: url("../media/registerCourse.png");
     }
 
-    #submitForm2 {
-        width: 100%;
-        margin-top: -34.5%;
-        margin-bottom: 6.9%;
-    }
-
     #footer {
         content: url("../media/footer.png");
     }
@@ -352,6 +383,21 @@ body {
     .goToResBtn {
         border-radius: 6.25vw;
     }
+
+    .detail-item {
+
+        box-shadow: 0px 1.1vw 0.8vw rgba(0, 0, 0, 0.25);
+        font-size: 4.68vw;
+
+    }
+
+    .dot {
+        height: 3.6vw;
+        width: 3.6vw;
+        margin: 0 0.2vw;
+        border: 0.4vw solid #A29B9B;
+    }
+
 
     #loadingAl {
         margin-top: 55%;

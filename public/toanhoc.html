@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap"
     rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
 
 <body>
 
@@ -48,6 +49,34 @@
             Đăng ký ngay
         </div>
     </div>
+    </div>
+    <div style="width: 100%;background-color:#F9F5EA ;aspect-ratio: 960/175;">
+        <div class="detail-item">
+            MỘT SỐ PHẢN HỒI PHỤ HUYNH
+        </div>
+    </div>
+    <div style="width:100%;aspect-ratio: 960/1547;background-color:#F9F5EA ">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="./media/feedback/slide1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./media/feedback/slide2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./media/feedback/slide3.png" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align:center;width: 100%;aspect-ratio: 960/80; background-color:#F9F5EA ;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
 
     <div style="width: 100%; aspect-ratio: 960/1486; background-color: #272660;"></div>
     <div id="submitForm2" style="margin-top: -52%;">
@@ -60,7 +89,7 @@
             <button class="submitButton"> ĐĂNG KÝ NGAY</button>
         </div>
     </div>
-    <div id="registerCourse" class="imgContent" style="margin-top: -195%;"></div>
+    <div id="registerCourse" class="imgContent" style="margin-top: -196%;"></div>
     <div style="background-color: #F9F5EA;width: 100%;aspect-ratio: 100/54;"></div>
     <div id="footer" class="imgContent"></div>
 
@@ -145,6 +174,29 @@
             scrollTop: $("#submitForm1").offset().top
         }, 1000);
     })
+</script>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000);
+    }
 </script>
 
 </html>
