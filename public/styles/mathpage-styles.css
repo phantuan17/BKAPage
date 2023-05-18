@@ -31,32 +31,11 @@ body {
 
 }
 
-.goToCourse {
-    position: absolute;
-    width: 960px;
-    margin-top: -140px;
-    font-size: 35px;
-}
-
-#goToMap {
-    width: 50%;
-    aspect-ratio: 485/113;
-    margin: auto;
-    margin-bottom: 6%;
-    padding-top: 1.35%;
-    font-size: 35px;
-    color: white;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    text-align: center;
-    background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
-    border-radius: 60px;
-}
 
 .goToRes {
     position: absolute;
-    width: 960px;
-    font-size: 35px;
+    width: 420px;
+    font-size: 15px;
 }
 
 .goToResBtn {
@@ -69,7 +48,7 @@ body {
     text-align: center;
     background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
     height: 9.3%;
-    border-radius: 60px;
+    border-radius: 26px;
 }
 
 .submitForm {
@@ -77,10 +56,10 @@ body {
     width: 90%;
     aspect-ratio: 876/888;
     margin-left: 5%;
-    font-size: 50px;
-    border-radius: 25px;
+    font-size: 22px;
+    border-radius: 11px;
     background: #FFFFFF;
-    box-shadow: 0px 14px 32px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 6px 14px 4px rgba(0, 0, 0, 0.25);
     padding-top: 8%;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -103,7 +82,7 @@ body {
     margin-top: 4.8%;
     background: #F0F0F0;
     padding-left: 2.1%;
-    border-radius: 10px;
+    border-radius: 4px;
     border: none;
 }
 
@@ -118,7 +97,7 @@ body {
     margin-top: 10%;
     margin-left: 10%;
     background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
-    border-radius: 60px;
+    border-radius: 26px;
     border: none;
     aspect-ratio: 724/113;
     font-size: 100%;
@@ -127,7 +106,7 @@ body {
 }
 
 #submitButton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .detail-item {
@@ -137,21 +116,21 @@ body {
     padding-top: 4%;
     aspect-ratio: 880/136;
     background: #272660;
-    box-shadow: 0px 11px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito';
     font-weight: 900;
     color: white;
-    font-size: 45px;
+    font-size: 20px;
     text-align: center;
 
 }
 
 .dot {
-    height: 35px;
-    width: 35px;
-    margin: 0 2px;
+    height: 15px;
+    width: 15px;
+    margin: 0 1px;
     background-color: #CBCBCB;
-    border: 4px solid #A29B9B;
+    border: 2px solid #A29B9B;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -162,7 +141,7 @@ body {
 }
 
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 437px;
     position: relative;
     margin: auto;
 }
@@ -180,14 +159,14 @@ body {
     position: relative;
     margin: auto;
     margin-top: 10%;
-    padding-top: 62px;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 730px;
+    padding-top: 27px;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 319px;
     aspect-ratio: 730/500;
     background-color: white;
-    box-shadow: 0px 4px 17px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
+    box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
 }
 
 .loader {
@@ -218,40 +197,40 @@ body {
 #sucessAl {
     margin: auto;
     margin-top: 10%;
-    padding-top: 62px;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 730px;
+    padding-top: 27px;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 319px;
     aspect-ratio: 730/500;
     background-color: white;
-    box-shadow: 0px 4px 17px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
+    box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
     font-family: "Montserrat";
     font-style: italic;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 22px;
     text-align: center;
     color: black;
 }
 
 #alBtn {
     margin: auto;
-    margin-top: 20px;
-    width: 260px;
+    margin-top: 9px;
+    width: 114px;
     aspect-ratio: 260/85;
     background: #4FBB84;
-    border-radius: 50px;
-    padding-top: 10px;
+    border-radius: 22px;
+    padding-top: 4px;
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 22px;
     color: #FFFFFF;
 }
 
-@media only screen and (min-width:960px) {
+@media only screen and (min-width:420px) {
     body {
-        width: 960px;
+        width: 420px;
     }
 
     #hook {
@@ -305,7 +284,7 @@ body {
 
 
 /* CSS Mobile */
-@media only screen and (max-width:959px) {
+@media only screen and (max-width:420px) {
     body {
         margin: 0px;
     }
@@ -353,26 +332,6 @@ body {
 
     #footer {
         content: url("../media/footer.png");
-    }
-
-    #goToMap {
-        font-size: 3.64vw;
-        border-radius: 6.25vw;
-
-    }
-
-    .goToCourse {
-        width: 100%;
-        margin-top: -14.6%;
-        font-size: 3.6vw;
-    }
-
-    #goToMath {
-        border-radius: 4.3vw;
-    }
-
-    #goToDev {
-        border-radius: 4.3vw;
     }
 
     .goToRes {

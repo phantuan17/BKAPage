@@ -37,13 +37,13 @@ body {
     margin: auto;
     margin-bottom: 6%;
     padding-top: 1.35%;
-    font-size: 35px;
+    font-size: 15px;
     color: white;
     font-family: 'Montserrat';
     font-weight: 600;
     text-align: center;
     background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
-    border-radius: 60px;
+    border-radius: 26px;
 }
 
 #goMath {
@@ -53,17 +53,17 @@ body {
     margin-left: 0px;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48.76px;
+    font-size: 17.5px;
+    line-height: 21px;
     align-items: center;
     color: #FFFFFF;
     background: linear-gradient(86.03deg, #48BBCB -4.1%, #478BC6 91.34%);
-    border-radius: 5.2vw;
-    filter: drop-shadow(0px 16px 24px rgba(71, 139, 198, 0.8));
+    border-radius: 22px;
+    filter: drop-shadow(0px 7px 10px rgba(71, 139, 198, 0.8));
     text-align: center;
     padding-top: 0%;
     left: 8.5%;
-    top: 509px;
+    top: 222px;
     border: none;
 }
 
@@ -74,23 +74,23 @@ body {
     margin-left: 0px;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48.76px;
+    font-size: 17.5px;
+    line-height: 21px;
     align-items: center;
     color: #FFFFFF;
     background: linear-gradient(86.03deg, #EF7836 -4.1%, #F8B12A 91.34%);
-    border-radius: 5.2vw;
+    border-radius: 22px;
     filter: drop-shadow(0px 16px 24px rgba(246, 167, 44, 0.6));
     text-align: center;
     padding-top: 0%;
     left: 51.4%;
-    top: 509px;
+    top: 222px;
     border: none;
 }
 
-@media only screen and (min-width:960px) {
+@media only screen and (min-width:420px) {
     body {
-        width: 960px;
+        width: 420px;
     }
 
     #hook1 {
@@ -107,7 +107,7 @@ body {
 }
 
 /* CSS Mobile */
-@media only screen and (max-width:959px) {
+@media only screen and (max-width:420px) {
     body {
         margin: 0px;
     }
