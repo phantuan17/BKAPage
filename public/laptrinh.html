@@ -70,18 +70,13 @@
     </div>
 </body>
 <script>
-    function submitStudent(name, grade, phone, testMath, testDev) {
-        console.log(name);
-        console.log(grade);
-        console.log(phone);
-        console.log(testMath);
-        console.log(testDev);
+    function submitStudent(name, grade, phone, testMath, testDev, src) {
         $("#alert").show();
         $("#loadingAl").show();
+        console.log(src)
+        var api = 'https://script.google.com/macros/s/AKfycbzjgavpwX-u-fxq8sjPhRM3-Riyoswfog9XZ1qQmOdKYE5Zea8SVx0OckgfmqwhknXikg/exec'
 
-        var api = 'https://script.google.com/macros/s/AKfycbz9ImC8C4ifVKrzrrwbmhoKT1Lc4OJkGw2kGPA4V5qJy8JIhh4Uftt7ewKmDvRlYlywQQ/exec'
-
-        api = api + '?name=' + name + '&grade=' + grade + '&phoneNo=' + phone + '&testMath=' + testMath + '&testDev=' + testDev
+        api = api + '?name=' + name + '&grade=' + grade + '&phoneNo=' + phone + '&testMath=' + testMath + '&testDev=' + testDev + '&src=' + src;
 
         fetch(
             api, {
@@ -112,7 +107,8 @@
             })
         }
         else {
-            submitStudent(name, 'null', phone, false, true)
+            var src = window.location.href
+            submitStudent(name, 'null', phone, false, true, src)
         }
     });
 
