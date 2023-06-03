@@ -4,6 +4,9 @@
 
 <head>
     <title>Toán học</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
     </script>
     <!-- Yandex.Metrika counter -->
@@ -39,7 +42,7 @@
 
     gtag('config', 'G-0J2QCVCM21');
 </script>
-<link rel="stylesheet" href="styles/mathpage-styles.css">
+<link rel="stylesheet" href="./styles/mathpage-styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap"
@@ -47,8 +50,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
 
 <body>
-
+<!-- header -->
     <div id="hook" class="imgContent"></div>
+<!-- form -->
     <div id="submitForm1" style="width: 100%;aspect-ratio: 960/1076;background-color: #272660;padding-top: 7%;">
         <div class="submitForm">
             <div class="submitTitle">ĐĂNG KÝ NHẬN TƯ VẤN</div>
@@ -59,60 +63,81 @@
             <button class="submitButton"> ĐĂNG KÝ NGAY</button>
         </div>
     </div>
-    <div id="lotrinh" class="imgContent" style="background-color: #F9F5EA;"></div>
-    <div class="goToRes">
-        <div class="goToResBtn" id="goToRes1Btn" style="width: 40%; aspect-ratio: 377/90;margin-top:-24.68% ;">
-            Đăng ký ngay
-        </div>
+<!-- quy trình -->
+    <div id="quytrinh" class="imgContent" style="background-color: #F9F5EA;"></div>
+
+   <!-- tiến trình -->
+    <div id="tientrinh1" class="imgContent" style="background-color: #F9F5EA;"></div>
+
+
+<div class="swiffy-slider">
+    <ul class="slider-container">
+        <li> <div id="tientrinh_left" class="imgContent" style="background-color: #F9F5EA; aspect-ratio: 960/1119;"></div></li>
+        <li> <div id="tientrinh_right" class="imgContent" style="background-color: #F9F5EA; aspect-ratio: 960/1119;"></div></li>
+       
+    </ul>
+
+
+ <div style="text-align:center;width: 100%;aspect-ratio: 960/80; background-color:#F9F5EA ;">
+       <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+    </div> 
     </div>
-    <div id="loiich" class="imgContent" style="background-color: #F9F5EA;"></div>
+   
+</div>
+
+   
+    <div id="tientrinh3" class="imgContent" style="background-color: #F9F5EA;"></div>
+    <!-- quyền lợi -->
+    <div id="quyenloi" class="imgContent" style="background-color: #F9F5EA; margin-bottom: 20%;"></div>
     <div class="goToRes">
         <div class="goToResBtn" id="goToRes2Btn" style="width: 40%; aspect-ratio: 377/90;margin-top:-15% ;">
             Đăng ký ngay
         </div>
     </div>
-    <div id="teamIntro" class="imgContent" style="background-color: #F9F5EA;"></div>
-    <div id="teachingMethod" class="imgContent" style="background-color: #F9F5EA;"></div>
 
-    <div class="goToRes"
-        style="margin-top:0% ; position: relative;background-color: #F9F5EA;padding-top:5.5% ;padding-bottom: 13%;">
-        <div class="goToResBtn" id="goToRes3Btn" style="width: 40%; aspect-ratio: 377/90;">
-            Đăng ký ngay
-        </div>
-    </div>
-    </div>
     <div style="width: 100%;background-color:#F9F5EA ;aspect-ratio: 960/175;">
         <div class="detail-item">
             MỘT SỐ PHẢN HỒI PHỤ HUYNH
         </div>
     </div>
     <div style="width:100%;aspect-ratio: 960/1547;background-color:#F9F5EA ">
-        <div class="slideshow-container">
+      
+	<div class="slideshow-container " >
+		<div class="mySlides fade" >
+            <img src="./media/feedback/slide1.png" alt="" width="100%" >
+		</div>
 
-            <div class="mySlides fade">
-                <img src="./media/feedback/slide1.png" style="width:100%">
-            </div>
+		<div class="mySlides fade" >	
+			<img src="./media/feedback/slide2.png"  alt="" width="100%" >
+		</div>
 
-            <div class="mySlides fade">
-                <img src="./media/feedback/slide2.png" style="width:100%">
-            </div>
+		<div class="mySlides fade" >
+			<img src="./media/feedback/slide3.png"  alt="" width="100%">
+		</div>
 
-            <div class="mySlides fade">
-                <img src="./media/feedback/slide3.png" style="width:100%">
-            </div>
-        </div>
-    </div>
+		
+  
+		
+		<div>
+		<a width="100%" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a width="100%" class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	</div>
+</div>
+   
 
     <div style="text-align:center;width: 100%;aspect-ratio: 960/80; background-color:#F9F5EA ;">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-    <div style="width: 100%; aspect-ratio: 960/1486; background-color: #272660;"></div>
-    <div id="submitForm2" style="margin-top: -52%;">
+
+      <div id="submitForm2" style="margin-top: 20%;">
         <div class="submitForm">
-            <div class="submitTitle">ĐĂNG KÝ NHẬN TƯ VẤN</div>
+            <div class="submitTitle">ĐĂNG KÝ KIỂM TRA TRÌNH ĐỘ</div>
             <input type="text" id="fname" class="textField" placeholder="Họ tên học sinh">
             <input type="text" id="fname" class="textField" placeholder="Con đang học lớp mấy?">
             <input type="text" id="fname" class="textField" placeholder="Số điện thoại phụ huynh">
@@ -120,10 +145,27 @@
             <button class="submitButton"> ĐĂNG KÝ NGAY</button>
         </div>
     </div>
-    <div id="registerCourse" class="imgContent" style="margin-top: -196%;"></div>
-    <div style="background-color: #F9F5EA;width: 100%;aspect-ratio: 960/930;"></div>
-    <div id="footer" class="imgContent"></div>
+    <br>
+    <div>
+        <div id="phone"  style="margin-top: 2% ;  width: 100%;">
+       </div>
+    </div>
+    <div id="registerCourse" class="imgContent" style="margin-top: -124%;"></div>
+  <div style="width: 100%; aspect-ratio: 960/984; background-color: #272660; margin-top: -30%;" ></div>
 
+    <img style="margin-top: 30%; " class="imgContent" src="./media/add.png" alt="add">
+    <div id="goToMap">
+        Chỉ đường bằng <br>
+        Ứng dụng Bản đồ
+    </div>
+    <div id="teamIntro" class="imgContent" style="background-color: #ffff;"></div>
+   
+<div style="position: relative; background-color: #272660; text-align: center;" >
+
+<a href="./index.html" style=" color: #F9F5EA; text-decoration: none; padding-right:30px; ">Trang Chủ</a>
+<a href="./laptrinh.html" style=" color: #F9F5EA; text-decoration: none;" >Lập trình</a>
+ <div id="footer" class="imgContent" style="margin-top: 9%;"></div>
+</div>
     <div id="alert" style="display: none;">
         <div id="sucessAl" style="display: none;">
             Đăng ký thành công!<br>
@@ -137,7 +179,58 @@
             </div>
         </div>
     </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
+<script>
+
+    $("#goToMap").on("click", function (event) {
+        window.open("https://maps.app.goo.gl/arAnxNQZ9BjNMHXf7?g_st=ic", "_blank");
+    })
+    $("#goMath").on("click", function (event) {
+        window.open("toan-hoc", "_self");
+    })
+    $("#goDev").on("click", function (event) {
+        window.open("lap-trinh", "_self");
+    })
+
+</script>
 <script>
     function submitStudent(name, grade, phone, testMath, testDev, src) {
         console.log(name);
@@ -208,27 +301,34 @@
     })
 </script>
 <script>
-    var slideIndex = 0;
-    showSlides();
+ var slideIndex = 1;
+showSlides(slideIndex);
 
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 5000);
-    }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 </script>
 
-</html>
+</html> 

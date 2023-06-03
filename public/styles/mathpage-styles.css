@@ -1,401 +1,470 @@
 * {
-    box-sizing: border-box;
-}
-
-
-@font-face {
-    font-family: 'FS Magistral';
-    src: url('FSMagistralBoldItalic.woff2') format('woff2'),
-        url('FSMagistralBoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'FS Magistral';
-    src: url('FSMagistralBoldItalic.woff2') format('woff2'),
-        url('FSMagistralBoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  font-family: "FS Magistral";
+  src: url("FSMagistralBoldItalic.woff2") format("woff2"),
+    url("FSMagistralBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Magistral";
+  src: url("FSMagistralBoldItalic.woff2") format("woff2"),
+    url("FSMagistralBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 body {
-    margin: auto;
+  margin: auto;
 }
 
 .imgContent {
-    position: relative;
-    width: 100%;
-
+  position: relative;
+  width: 100%;
 }
 
-
 .goToRes {
-    position: absolute;
-    width: 420px;
-    font-size: 15px;
+  position: absolute;
+  width: 420px;
+  font-size: 15px;
 }
 
 .goToResBtn {
-    margin: auto;
-    padding-top: 2.3%;
-    font-size: 100%;
-    color: white;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    text-align: center;
-    background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
-    height: 9.3%;
-    border-radius: 26px;
+  margin: auto;
+  padding-top: 2.3%;
+  font-size: 100%;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(180deg, #f07e35 0%, #f8b12a 100%);
+  height: 9.3%;
+  border-radius: 26px;
 }
 
 .submitForm {
-    position: relative;
-    width: 90%;
-    aspect-ratio: 876/888;
-    margin-left: 5%;
-    font-size: 22px;
-    border-radius: 11px;
-    background: #FFFFFF;
-    box-shadow: 0px 6px 14px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 8%;
-    font-family: 'Montserrat';
-    font-weight: 500;
+  position: relative;
+  width: 90%;
+  aspect-ratio: 876/888;
+  margin-left: 5%;
+  font-size: 22px;
+  border-radius: 11px;
+  background: #ffffff;
+  box-shadow: 0px 6px 14px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 8%;
+  font-family: "Montserrat";
+  font-weight: 500;
 }
 
 .submitTitle {
-    position: relative;
-    color: #F08234;
-    text-align: center;
-    font-weight: 600;
-
+  position: relative;
+  color: #f08234;
+  text-align: center;
+  font-weight: 600;
 }
 
 .textField {
-    position: relative;
-    aspect-ratio: 720/106;
-    font-size: 80%;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 4.8%;
-    background: #F0F0F0;
-    padding-left: 2.1%;
-    border-radius: 4px;
-    border: none;
+  position: relative;
+  aspect-ratio: 720/106;
+  font-size: 80%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4.8%;
+  background: #f0f0f0;
+  padding-left: 2.1%;
+  border-radius: 4px;
+  border: none;
 }
 
 .checkList {
-    margin-left: 13.5%;
-    margin-top: 6.5%;
+  margin-left: 13.5%;
+  margin-top: 6.5%;
 }
 
 .submitButton {
-    position: relative;
-    width: 80%;
-    margin-top: 10%;
-    margin-left: 10%;
-    background: linear-gradient(180deg, #F07E35 0%, #F8B12A 100%);
-    border-radius: 26px;
-    border: none;
-    aspect-ratio: 724/113;
-    font-size: 100%;
-    font-weight: 600;
-    color: #FFFFFF;
+  position: relative;
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  background: linear-gradient(180deg, #f07e35 0%, #f8b12a 100%);
+  border-radius: 26px;
+  border: none;
+  aspect-ratio: 724/113;
+  font-size: 100%;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 #submitButton:hover {
-    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#goToMap {
+  width: 50%;
+  aspect-ratio: 485/113;
+  margin: auto;
+  margin-bottom: 6%;
+  padding-top: 1.35%;
+  font-size: 15px;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(180deg, #f07e35 0%, #f8b12a 100%);
+  border-radius: 26px;
 }
 
-.detail-item {
-    width: 90%;
-    margin: auto;
-    padding: auto;
-    padding-top: 4%;
-    aspect-ratio: 880/136;
-    background: #272660;
-    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Nunito';
-    font-weight: 900;
-    color: white;
-    font-size: 20px;
-    text-align: center;
 
+
+.detail-item {
+  width: 90%;
+  margin: auto;
+  padding: auto;
+  padding-top: 4%;
+  aspect-ratio: 880/136;
+  background: #272660;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Nunito";
+  font-weight: 900;
+  color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 1px;
-    background-color: #CBCBCB;
-    border: 2px solid #A29B9B;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  height: 15px;
+  width: 15px;
+  margin: 0 1px;
+  background-color: #cbcbcb;
+  border: 2px solid #a29b9b;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .active {
-    background-color: white;
+  background-color: white;
 }
 
 .slideshow-container {
-    max-width: 437px;
-    position: relative;
-    margin: auto;
+  max-width: 300px;
+  height: 700px;
+  position: relative;
+  margin: auto;
 }
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  border-radius: 0 3px 3px 0;
+  color: #ff66ff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -22px;
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  transition: 0.6s ease;
+  user-select: none;
+  width: auto;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(26, 191, 73, 0.8);
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(26, 191, 73, 0.8);
+}
+
+.dot {
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+  width: 15px;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* slide */
+
 #alert {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 #loadingAl {
-    position: relative;
-    margin: auto;
-    margin-top: 10%;
-    padding-top: 27px;
-    padding-left: 17px;
-    padding-right: 17px;
-    width: 319px;
-    aspect-ratio: 730/500;
-    background-color: white;
-    box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+  padding-top: 27px;
+  padding-left: 17px;
+  padding-right: 17px;
+  width: 319px;
+  aspect-ratio: 730/500;
+  background-color: white;
+  box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
 }
 
 .loader {
-    position: relative;
-    border: 16px solid #f3f3f3;
-    /* Light grey */
-    border-top: 16px solid #3498db;
-    /* Blue */
-    border-radius: 50%;
-    margin-left: 35%;
-    margin-top: 10%;
-    width: 30%;
-    aspect-ratio: 1/1;
-    animation: spin 2s linear infinite;
+  position: relative;
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 30%;
+  aspect-ratio: 1/1;
+  animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
 #sucessAl {
-    margin: auto;
-    margin-top: 10%;
-    padding-top: 27px;
-    padding-left: 17px;
-    padding-right: 17px;
-    width: 319px;
-    aspect-ratio: 730/500;
-    background-color: white;
-    box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-    font-family: "Montserrat";
-    font-style: italic;
-    font-weight: 500;
-    font-size: 22px;
-    text-align: center;
-    color: black;
+  margin: auto;
+  margin-top: 10%;
+  padding-top: 27px;
+  padding-left: 17px;
+  padding-right: 17px;
+  width: 319px;
+  aspect-ratio: 730/500;
+  background-color: white;
+  box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: black;
 }
 
 #alBtn {
-    margin: auto;
-    margin-top: 9px;
-    width: 114px;
-    aspect-ratio: 260/85;
-    background: #4FBB84;
-    border-radius: 22px;
-    padding-top: 4px;
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 22px;
-    color: #FFFFFF;
+  margin: auto;
+  margin-top: 9px;
+  width: 114px;
+  aspect-ratio: 260/85;
+  background: #4fbb84;
+  border-radius: 22px;
+  padding-top: 4px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff;
 }
 
-@media only screen and (min-width:420px) {
-    body {
-        width: 420px;
-    }
+@media only screen and (min-width: 420px) {
+  body {
+    width: 420px;
+  }
 
-    #hook {
-        content: url("../media/mathHook.png");
-    }
+  #hook {
+    content: url("../media/mathHook.png");
+  }
 
-    #hook1 {
-        content: url("../media/hook1.png");
-    }
+  #quytrinh {
+    content: url("../media/quytrinh.png");
+  }
 
-    #hook2 {
-        content: url("../media/hook2.png");
-    }
+  #tientrinh1 {
+    content: url("../media/tientrinh1.png");
+  }
 
-    #lotrinh {
-        content: url("../media/lotrinh.png");
-    }
+ #tientrinh_left {
+    content: url("../media/tientrinh_left.png");
+  }
+  #tientrinh_right {
+    content: url("../media/tientring_right.png");
+  }
 
-    #loiich {
-        content: url("../media/loich.png");
-    }
+  #tientrinh3 {
+    content: url("../media/tientrinh3.png");
+  }
 
-    #aboutMath {
-        content: url("../media/aboutMath.png");
-    }
+  #quyenloi {
+    content: url("../media/quyenloi.png");
+  }
 
-    #aboutDev {
-        content: url("../media/aboutDev.png");
-    }
+  #teamIntro {
+    content: url("../media/teamIntro.png");
+  }
+  #phone {
+    content: url("../media/phone.png");
+  }
 
-    #teamIntro {
-        content: url("../media/teamIntro.png");
-    }
+  #aboutToroticCourse {
+    content: url("../media/aboutToroticCourse.png");
+  }
 
-    #teachingMethod {
-        content: url("../media/teachingMethod.png");
-    }
+  #registerCourse {
+    content: url("../media/registerCourse1.png");
+  }
 
-    #aboutToroticCourse {
-        content: url("../media/aboutToroticCourse.png");
-    }
-
-    #registerCourse {
-        content: url("../media/registerCourse.png");
-    }
-
-    #footer {
-        content: url("../media/footer.png");
-    }
+  #footer {
+    content: url("../media/footer.png");
+  }
 }
-
 
 /* CSS Mobile */
-@media only screen and (max-width:420px) {
-    body {
-        margin: 0px;
-    }
+@media only screen and (max-width: 420px) {
+  body {
+    margin: 0px;
+  }
 
-    #hook {
-        content: url("../media/mathHook.png");
-    }
+  #hook {
+    content: url("../media/mathHook.png");
+  }
 
-    #submitForm1 {
-        width: 100%;
-        margin-top: -25%;
-    }
+  #submitForm1 {
+    width: 100%;
+    margin-top: -25%;
+  }
+  #phone {
+    content: url("../media/phone.png");
+  }
+  #quytrinh {
+    content: url("../media/quytrinh.png");
+  }
 
-    #lotrinh {
-        content: url("../media/lotrinh.png");
-    }
+  #tientrinh1 {
+    content: url("../media/tientrinh1.png");
+  }
 
-    #loiich {
-        content: url("../media/loich.png");
-    }
+  #tientrinh_left {
+    content: url("../media/tientrinh_left.png");
+  }
+  #tientrinh_right {
+    content: url("../media/tientring_right.png");
+  }
 
-    #aboutMath {
-        content: url("../media/aboutMath.png");
-    }
+  #tientrinh3 {
+    content: url("../media/tientrinh3.png");
+  }
 
-    #aboutDev {
-        content: url("../media/aboutDev.png");
-    }
+  #teamIntro {
+    content: url("../media/teamIntro.png");
+  }
 
-    #teamIntro {
-        content: url("../media/teamIntro.png");
-    }
+  #registerCourse {
+    content: url("../media/registerCourse1.png");
+  }
 
-    #teachingMethod {
-        content: url("../media/teachingMethod.png");
-    }
+  #goToMap {
+    font-size: 3.64vw;
+    border-radius: 6.25vw;
+  }
 
-    #aboutToroticCourse {
-        content: url("../media/aboutToroticCourse.png");
-    }
+  #goToMath {
+    border-radius: 4.3vw;
+  }
 
-    #registerCourse {
-        content: url("../media/registerCourse.png");
-    }
+ 
+  #phone {
+    content: url("../media/phone.png");
+  }
+  #footer {
+    content: url("../media/footer.png");
+  }
 
-    #footer {
-        content: url("../media/footer.png");
-    }
+  .goToRes {
+    width: 100%;
+    font-size: 3.6vw;
+  }
 
-    .goToRes {
-        width: 100%;
-        font-size: 3.6vw;
-    }
+  .goToResBtn {
+    border-radius: 6.25vw;
+  }
 
-    .goToResBtn {
-        border-radius: 6.25vw;
-    }
+  .detail-item {
+    box-shadow: 0px 1.1vw 0.8vw rgba(0, 0, 0, 0.25);
+    font-size: 4.68vw;
+  }
 
-    .detail-item {
+  .dot {
+    height: 3.6vw;
+    width: 3.6vw;
+    margin: 0 0.2vw;
+    border: 0.4vw solid #a29b9b;
+  }
 
-        box-shadow: 0px 1.1vw 0.8vw rgba(0, 0, 0, 0.25);
-        font-size: 4.68vw;
+  #loadingAl {
+    margin-top: 55%;
+    padding-top: 6.45vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 75vw;
+    box-shadow: 0px 0.41vw 1.77vw 0.41vw rgba(0, 0, 0, 0.25);
+    border-radius: 5.2vw;
+    font-size: 5.2vw;
+  }
 
-    }
+  #sucessAl {
+    margin-top: 55%;
+    padding-top: 6.45vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 75vw;
+    box-shadow: 0px 0.41vw 1.77vw 0.41vw rgba(0, 0, 0, 0.25);
+    border-radius: 5.2vw;
+    font-size: 5.2vw;
+  }
 
-    .dot {
-        height: 3.6vw;
-        width: 3.6vw;
-        margin: 0 0.2vw;
-        border: 0.4vw solid #A29B9B;
-    }
+  #alBtn {
+    margin-top: 3vw;
+    width: 27vw;
+    border-radius: 5.2vw;
+    padding-top: 1vw;
+    font-size: 5.2vw;
+  }
 
+  .submitForm {
+    font-size: 5.2vw;
+    border-radius: 2.6vw;
+    box-shadow: 0vw 1.46vw 3.33vw 0.83vw rgba(0, 0, 0, 0.25);
+  }
 
-    #loadingAl {
-        margin-top: 55%;
-        padding-top: 6.45vw;
-        padding-left: 4vw;
-        padding-right: 4vw;
-        width: 75vw;
-        box-shadow: 0px 0.41vw 1.77vw 0.41vw rgba(0, 0, 0, 0.25);
-        border-radius: 5.2vw;
-        font-size: 5.2vw;
-    }
-
-    #sucessAl {
-        margin-top: 55%;
-        padding-top: 6.45vw;
-        padding-left: 4vw;
-        padding-right: 4vw;
-        width: 75vw;
-        box-shadow: 0px 0.41vw 1.77vw 0.41vw rgba(0, 0, 0, 0.25);
-        border-radius: 5.2vw;
-        font-size: 5.2vw;
-    }
-
-    #alBtn {
-        margin-top: 3vw;
-        width: 27vw;
-        border-radius: 5.2vw;
-        padding-top: 1vw;
-        font-size: 5.2vw;
-    }
-
-    .submitForm {
-        font-size: 5.2vw;
-        border-radius: 2.6vw;
-        box-shadow: 0vw 1.46vw 3.33vw 0.83vw rgba(0, 0, 0, 0.25);
-    }
-
-    .textField {
-        border-radius: 1.06vw;
-    }
-
+  .textField {
+    border-radius: 1.06vw;
+  }
 }
