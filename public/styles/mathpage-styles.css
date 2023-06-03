@@ -153,7 +153,6 @@ body {
 
 .slideshow-container {
   max-width: 300px;
-  height: 700px;
   position: relative;
   margin: auto;
 }
@@ -170,7 +169,7 @@ body {
   color: #ff66ff;
   cursor: pointer;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: -22px;
   padding: 16px;
   position: absolute;
@@ -329,9 +328,7 @@ body {
   #teamIntro {
     content: url("../media/teamIntro.png");
   }
-  #phone {
-    content: url("../media/phone.png");
-  }
+
 
   #aboutToroticCourse {
     content: url("../media/aboutToroticCourse.png");
@@ -360,9 +357,7 @@ body {
     width: 100%;
     margin-top: -25%;
   }
-  #phone {
-    content: url("../media/phone.png");
-  }
+ 
   #quytrinh {
     content: url("../media/quytrinh.png");
   }

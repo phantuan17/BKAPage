@@ -1,152 +1,204 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
+  <head>
     <title>Lập trình robot</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
-        (function (m, e, t, r, i, k, a) {
-            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-            m[i].l = 1 * new Date();
-            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-        ym(93673371, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true,
-            ecommerce: "dataLayer"
-        });
+      ym(93673371, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: "dataLayer",
+      });
     </script>
     <noscript>
-        <div><img src="https://mc.yandex.ru/watch/93673371" style="position:absolute; left:-9999px;" alt="" /></div>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/93673371"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0J2QCVCM21"></script>
-<script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-0J2QCVCM21"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-0J2QCVCM21');
-</script>
-<link rel="stylesheet" href="styles/devStyles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,500;1,700&display=swap"
-    rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    gtag("config", "G-0J2QCVCM21");
+  </script>
+  <link rel="stylesheet" href="styles/devStyles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,500;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap"
+    rel="stylesheet"
+  />
 
-<body>
-    <img class="image" id="devHook" src="media/devHook.png">
-    <img class="image" id="devCourse" src="media/devCourse.png">
-    <img class="image" id="devPpht" src="media/devPpht.png">
-
-    <div id="Devsubmit">
-        <div class="txttitle">Họ tên học sinh</div>
-        <input class="txtfield" type="text" id="name1" name="fname"><br>
-        <div class="txttitle">Số điện thoại phụ huynh</div>
-        <input class="txtfield" type="text" id="phone1" name="fname"><br>
-        <button class="submitbtn" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
-    </div>
-
-    <img class="image" id="devStudent" src="media/devStudent.png">
-    <img class="image" id="devRobot" src="media/devRobot.png">
-    <img class="image" id="devModule" src="media/devModule.png">
-    <img class="image" id="devEvent" src="media/devEvent.png">
-    <img class="image" id="devTools" src="media/devTools.png">
-
-    <div style="position: relative;">
-        <img id="videobgr" src="media/devBgrvid.png">
-        <div id="videofold" class="image">
-            <iframe id="videodemo" src="https://www.youtube.com/embed/MC7hAS9Eh8A" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A"> Video 30s demo online - YouTube</a>
-        </div>
-    </div>
-
-    <img class="image" id="devDki" src="media/devDki.png">
+  <body>
+    <img class="image" id="devHook" src="media/devHook.png" />
+    <img class="image" id="devCourse" src="media/devCourse.png" />
+    <img class="image" id="devPpht" src="media/devPpht.png" />
 
     <div id="Devsubmit">
-        <div class="txttitle">Họ tên học sinh</div>
-        <input class="txtfield" type="text" id="name1" name="fname"><br>
-        <div class="txttitle">Số điện thoại phụ huynh</div>
-        <input class="txtfield" type="text" id="phone1" name="fname"><br>
-        <button class="submitbtn" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
+      <div class="txttitle">Họ tên học sinh</div>
+      <input class="txtfield" type="text" id="name1" name="fname" /><br />
+      <div class="txttitle">Số điện thoại phụ huynh</div>
+      <input class="txtfield" type="text" id="1" name="fname" /><br />
+      <button class="submitbtn" type="button">
+        ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ
+      </button>
     </div>
 
-    <img class="image" id="devFooter" src="media/devFooter.png">
+    <img class="image" id="devStudent" src="media/devStudent.png" />
+    <img class="image" id="devRobot" src="media/devRobot.png" />
+    <img class="image" id="devModule" src="media/devModule.png" />
+    <img class="image" id="devEvent" src="media/devEvent.png" />
+    <img class="image" id="devTools" src="media/devTools.png" />
 
-    <div id="alert" style="display: none;">
-        <div id="sucessAl" style="display: none;">
-            Đăng ký thành công!<br>
-            BK Academy sẽ liên lạc Với anh chị trong thời gian sớm nhất!
-            <div id="alBtn">
-                Đóng
-            </div>
-        </div>
-        <div id="loadingAl" style="display: none;">
-            <div class="loader">
-            </div>
-        </div>
+    <div style="position: relative">
+      <img id="videobgr" src="media/devBgrvid.png" />
+      <div id="videofold" class="image">
+        <iframe
+          id="videodemo"
+          src="https://www.youtube.com/embed/MC7hAS9Eh8A"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A">
+          Video 30s demo online - YouTube</a
+        >
+      </div>
     </div>
-</body>
-<script>
+
+    <img class="image" id="devDki" src="media/devDki.png" />
+
+    <div id="Devsubmit">
+      <div class="txttitle">Họ tên học sinh</div>
+      <input class="txtfield" type="text" id="name1" name="fname" /><br />
+      <div class="txttitle">Số điện thoại phụ huynh</div>
+      <input class="txtfield" type="text" id="phone1" name="fname" /><br />
+      <button class="submitbtn" type="button">
+        ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ
+      </button>
+    </div>
+
+    <img class="image" id="devFooter" src="media/devFooter.png" />
+
+    <div id="alert" style="display: none">
+      <div id="sucessAl" style="display: none">
+        Đăng ký thành công!<br />
+        BK Academy sẽ liên lạc Với anh chị trong thời gian sớm nhất!
+        <div id="alBtn">Đóng</div>
+      </div>
+      <div id="loadingAl" style="display: none">
+        <div class="loader"></div>
+      </div>
+    </div>
+  </body>
+  <script>
     function submitStudent(name, grade, phone, testMath, testDev, src) {
-        $("#alert").show();
-        $("#loadingAl").show();
-        console.log(src)
-        var api = 'https://script.google.com/macros/s/AKfycbzjgavpwX-u-fxq8sjPhRM3-Riyoswfog9XZ1qQmOdKYE5Zea8SVx0OckgfmqwhknXikg/exec'
+      $("#alert").show();
+      $("#loadingAl").show();
+      console.log(src);
+      var api =
+        "https://script.google.com/macros/s/AKfycbzjgavpwX-u-fxq8sjPhRM3-Riyoswfog9XZ1qQmOdKYE5Zea8SVx0OckgfmqwhknXikg/exec";
 
-        api = api + '?name=' + name + '&grade=' + grade + '&phoneNo=' + phone + '&testMath=' + testMath + '&testDev=' + testDev + '&src=' + src;
+      api =
+        api +
+        "?name=" +
+        name +
+        "&grade=" +
+        grade +
+        "&phoneNo=" +
+        phone +
+        "&testMath=" +
+        testMath +
+        "&testDev=" +
+        testDev +
+        "&src=" +
+        src;
 
-        fetch(
-            api, {
-            redirect: "follow",
-            method: "POST",
-            headers: {
-                "Content-Type": "text/plain;charset=utf-8",
-            }
-        }).then(res => {
-            $("#loadingAl").hide();
-            $("#sucessAl").show();
-
-        });
+      fetch(api, {
+        redirect: "follow",
+        method: "POST",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+      }).then((res) => {
+        $("#loadingAl").hide();
+        $("#sucessAl").show();
+      });
     }
 
     $(".submitbtn").on("click", function (event) {
-        var form = event.currentTarget.parentElement;
-        var collection = form.getElementsByClassName("txtfield");
-        var name = collection[0].value;
-        var phone = collection[1].value;
-        if (phone == '') {
-            collection[1].style.border = '2px solid red';
-            collection[1].setAttribute("placeholder", "Vui lòng nhập số điện thoại")
-            collection[1].addEventListener("focusout", function () {
-                if (this.value != '') {
-                    this.style.border = 'none'
-                }
-            })
-        }
-        else {
-            var src = window.location.href
-            submitStudent(name, 'null', phone, false, true, src)
-        }
+      var form = event.currentTarget.parentElement;
+      var collection = form.getElementsByClassName("txtfield");
+      var name = collection[0].value;
+      var phone = collection[1].value;
+      if (phone == "") {
+        collection[1].style.border = "2px solid red";
+        collection[1].setAttribute(
+          "placeholder",
+          "Vui lòng nhập số điện thoại"
+        );
+        collection[1].addEventListener("focusout", function () {
+          if (this.value != "") {
+            this.style.border = "none";
+          }
+        });
+      } else {
+        var src = window.location.href;
+        submitStudent(name, "null", phone, false, true, src);
+      }
     });
 
     $("#alBtn").on("click", function (event) {
-        $("#alert").hide();
-        $("#sucessAl").hide();
-    })
-
-</script>
-
+      $("#alert").hide();
+      $("#sucessAl").hide();
+    });
+  </script>
 </html>
