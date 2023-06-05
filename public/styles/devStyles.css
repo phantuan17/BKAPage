@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  
 }
 
 .image {
@@ -9,25 +8,24 @@ body {
   margin-left: 0%;
   margin-right: auto;
 }
- .image-overlay {
+.image-overlay {
+
   position: absolute;
   top: 6%;
-  left: 60%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 35px;
   text-align: center;
   padding: 10px;
-  color:#1a1515;
-          text-decoration: none;
-          padding-right: 60px;
-          font-family: 'Montserrat';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 17px;
-          line-height: 43px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 60px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
 }
- .math {
-  
+.math {
   position: absolute;
   top: 6%;
   left: 70%;
@@ -35,36 +33,33 @@ body {
   font-size: 35px;
   text-align: center;
   padding: 10px;
-  color:#121212;
-          text-decoration: none;
-          padding-right: 60px;
-          font-family: 'Montserrat';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 17px;
-          line-height: 43px;
+  color: #ffff;
+  text-decoration: none;
+  padding-right: 60px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
 }
 span:hover {
-  color: #f07e35;
+  background-color: #f07e35;
 }
 
 #Devsubmit {
-    
-  /* aspect-ratio: 875/623;  */
+  aspect-ratio: 875/623;
   background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
   width: 91.2%;
-  height: 453px;
+  height: 465px;
   padding-top: 5%;
-  padding-right: 60px;
+  padding-left: 50px;
 }
 
-#student{
-    height: 550px;
+#student {
+  height: 558px;
 }
-
 
 #Devsubmit2 {
-  /* aspect-ratio: 875/623;  */
+  aspect-ratio: 875/623;
   background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
   width: 91.2%;
   border-radius: 20px;
@@ -73,11 +68,13 @@ span:hover {
 }
 
 #map {
-    margin-right: 10%;
-    height: 550px;
+  padding-left: 10%;
+  margin-right: 13%;
+  height: 550px;
 }
+
 .txttitle {
-  width: 82%;
+  width: 80%;
   aspect-ratio: 718 / 50;
   margin-left: 9.2%;
   margin-bottom: 1.5%;
@@ -89,11 +86,11 @@ span:hover {
 }
 
 .txtfield {
-  width: 82%;
+  width: 70%;
   aspect-ratio: 718 / 94;
   margin-left: 9.2%;
   margin-bottom: 3%;
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: 25px;
   font-family: "Montserrat";
   font-style: italic;
@@ -104,7 +101,8 @@ span:hover {
 }
 
 .submitbtn {
-  width: 80%;
+  text-align: center;
+  width: 70%;
   aspect-ratio: 712/127;
   margin-left: 10.8%;
   margin-top: 3.6%;
@@ -261,25 +259,28 @@ span:hover {
     margin: auto;
   }
 
-
-#footer {
+  #footer {
     content: url("../media/footer.png");
-}
+  }
+  #Devsubmit {
+    
+  }
   .txttitle {
-    font-size: 16px;
+      width: 75%;
+  aspect-ratio: 700 / 60;
   }
 
   .txtfield {
-    font-size: 17px;
-    border-radius: 9px;
+  width: 75%;
+  aspect-ratio: 700 / 60;
   }
 
   .submitbtn {
-    border-radius: 22px;
-    font-size: 16px;
+   width: 75%;
+  aspect-ratio: 700 / 60;
   }
 
-   #goToMap {
+  #goToMap {
     font-size: 25px;
     border-radius: 6.25vw;
   }
@@ -318,4 +319,33 @@ span:hover {
     padding-top: 4px;
     font-size: 22px;
   }
+}
+
+@media (max-width: 768px) {
+   body {
+    width: 768px;
+    margin: auto;
+  }
+  #map {
+    display: none;
+  }
+  #Devsubmit2 {
+    text-align: center;
+    margin-left: 8%;
+  }
+  #student {
+    display: none;
+  }
+  #Devsubmit {
+    text-align: center;
+    padding-right: 90px;
+  }
+
+.image-overlay {
+
+ display: none;
+}
+.math {
+ display: none;
+}
 }
