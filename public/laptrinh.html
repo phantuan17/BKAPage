@@ -90,10 +90,15 @@
       </div>
     </div>
 
-    <div id="phuongphap" class="image" style="margin-top: 4%; max-width:100% ;  ">
-      <img src="./media/phuongphap.jpg" class="image" alt="" style="margin-left: 35px; margin-right: 35px;" />
+    <div id="phuongphap" class="image" style="margin-top: 4%; max-width: 100%">
+      <img
+        src="./media/phuongphap.jpg"
+        class="image"
+        alt=""
+        style="margin-left: 35px; margin-right: 35px"
+      />
     </div>
-    <div id="form" style="display: grid; grid-template-columns: 1fr 1fr; width: 100%;">
+    <div id="form" style="display: flex; justify-content: space-between">
       <div id="student">
         <img class="image" id="student" src="media/devStudent.png" />
       </div>
@@ -123,28 +128,29 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A">
+        <!-- <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A">
           Video 30s demo online - YouTube</a
-        >
+        > -->
       </div>
     </div>
 
     <img class="image" id="devDki" src="media/devDki.png" />
 
     <div
-      style="display: grid; grid-template-columns: 1fr 1fr;  margin-bottom: 10%; width: 100%;"
+      style="
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-gap: 20px;
+        margin-bottom: 10%;
+        width: 100%;
+      "
     >
       <div id="map">
-        <img
-          src="./media/map.png"
-          id="map"
-          class="image"
-          alt=""
-        />
+        <img src="./media/map.png" id="map" class="image" alt="" />
         <div id="goToMap">Chỉ đường</div>
       </div>
 
-      <div style="">
+      <div>
         <div id="Devsubmit2">
           <div class="txttitle">Họ tên học sinh</div>
           <input class="txtfield" type="text" id="name1" name="fname" /><br />
@@ -155,7 +161,7 @@
           </button>
         </div>
         <div id="lienhe" class="image" style="margin-top: 10%">
-          <img src="./media/phone.png" alt="" />
+          <img src="./media/phone.png" class="image" alt="" />
         </div>
       </div>
     </div>
@@ -202,22 +208,52 @@
         >Toán Học</a
       >
 
-      <div id="footer" class="image" style="display: grid; grid-template-columns: 1fr 1fr; margin-top: 3%;">
+      <div
+        id="footer"
+        class="image"
+        style="
+          display: grid;
+          grid-template-columns: 35% 65%;
+          grid-gap: 30px;
+          margin-top: 3%;
+          margin-right: 3%;
+        "
+      >
         <div class="footer-logo">
-          <img src="./media/logo1.png" style="max-width: 100%;"  alt="" />
+          <img
+            src="./media/logo1.png"
+            class="image"
+            style="max-width: 250px; margin-right: 10%"
+            alt=""
+          />
         </div>
         <div class="footer-menu">
-          <div class="tile" style="color: #ffffff; font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;">
-            <p>
-              Số 17/A10 KĐT Geleximco, An Khánh, Hoài Đức, Hà Nội Hotline:
-              0963.209.309 (có sử dụng Zalo)
-            </p>
-           <a href="https://www.facebook.com/bkacademy.edu.vn" style="text-decoration: none; color: #ffffff;"> Fanpage: www.fb.com/bkacademy.edu.vn
-          </div></a>
+          <div
+            class="tile"
+            style="
+              color: #ffffff;
+              font-family: 'Montserrat';
+              margin-bottom: 10%;
+              padding-right: 2%;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 24px;
+            "
+          >
+            <div class="text" style="width: 600px">
+              <p>
+                Số 17/A10 KĐT Geleximco, An Khánh, Hoài Đức, Hà Nội Hotline:
+              </p>
+              <p style="margin-right: 43%">0963.209.309 (có sử dụng Zalo)</p>
+              <a
+                href="https://www.facebook.com/bkacademy.edu.vn"
+                style="text-decoration: none; color: #ffffff; margin-right: 28%"
+              >
+                Fanpage:www.fb.com/bkacademy.edu.vn</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>

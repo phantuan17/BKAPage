@@ -9,7 +9,6 @@ body {
   margin-right: auto;
 }
 .image-overlay {
-
   position: absolute;
   top: 6%;
   left: 50%;
@@ -22,7 +21,7 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 43px;
 }
 .math {
@@ -30,7 +29,7 @@ body {
   top: 6%;
   left: 70%;
   transform: translate(-50%, -50%);
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   padding: 10px;
   color: #ffff;
@@ -46,35 +45,35 @@ span:hover {
 }
 
 #Devsubmit {
-  aspect-ratio: 875/623;
+  aspect-ratio: 640/530;
   background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
-  width: 91.2%;
-  height: 465px;
-  padding-top: 5%;
-  padding-left: 50px;
+  width: 70%;
+  height: 440px;
+  padding-top: 8%;
 }
 
 #student {
-  height: 558px;
+  height: 580px;
 }
 
 #Devsubmit2 {
   aspect-ratio: 875/623;
   background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
-  width: 91.2%;
+  width: 100%;
+  margin-right: 5%;
   border-radius: 20px;
-  height: 500px;
-  padding-top: 5%;
+  height: 400px;
+  padding-top: 10%;
 }
 
 #map {
-  padding-left: 10%;
-  margin-right: 13%;
+  padding-left: 5%;
+  margin-right: 5%;
   height: 550px;
 }
 
 .txttitle {
-  width: 80%;
+  width: 75%;
   aspect-ratio: 718 / 50;
   margin-left: 9.2%;
   margin-bottom: 1.5%;
@@ -86,11 +85,11 @@ span:hover {
 }
 
 .txtfield {
-  width: 70%;
+  width: 75%;
   aspect-ratio: 718 / 94;
   margin-left: 9.2%;
   margin-bottom: 3%;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   font-size: 25px;
   font-family: "Montserrat";
   font-style: italic;
@@ -102,15 +101,15 @@ span:hover {
 
 .submitbtn {
   text-align: center;
-  width: 70%;
+  width: 80%;
   aspect-ratio: 712/127;
-  margin-left: 10.8%;
+  margin-left: 9%;
   margin-top: 3.6%;
   border: none;
   background: #4fbb84;
   border-radius: 5.2vw;
   font-family: "Montserrat";
-  font-size: 26px;
+  font-size: 20px;
   font-style: italic;
   font-weight: 700;
   color: #ffffff;
@@ -253,31 +252,28 @@ span:hover {
 }
 
 /* CSS Destop */
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1024px) {
   body {
-    width: 1920px;
+    width: 1024px;
     margin: auto;
   }
 
-  #footer {
-    content: url("../media/footer.png");
-  }
-  #Devsubmit {
-    
-  }
   .txttitle {
-      width: 75%;
-  aspect-ratio: 700 / 60;
+    width: 85%;
+    aspect-ratio: 700 / 60;
   }
 
   .txtfield {
-  width: 75%;
-  aspect-ratio: 700 / 60;
+    border-radius: 10px;
+    width: 85%;
+    aspect-ratio: 700 / 60;
   }
 
   .submitbtn {
-   width: 75%;
-  aspect-ratio: 700 / 60;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 85%;
+    aspect-ratio: 700 / 80;
   }
 
   #goToMap {
@@ -286,7 +282,7 @@ span:hover {
   }
   #vidurl {
     line-height: 22px;
-    font-size: 16px;
+    font-size: 2.5vw;
   }
 
   #loadingAl {
@@ -322,30 +318,38 @@ span:hover {
 }
 
 @media (max-width: 768px) {
-   body {
+  body {
     width: 768px;
     margin: auto;
   }
-  #map {
-    display: none;
+  #map img {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  #lienhe img {
+    max-width: 100%;
   }
   #Devsubmit2 {
+    overflow: hidden;
+    max-width: 100%;
     text-align: center;
-    margin-left: 8%;
   }
   #student {
     display: none;
   }
   #Devsubmit {
+    width: 100%;
     text-align: center;
     padding-right: 90px;
   }
 
-.image-overlay {
-
- display: none;
-}
-.math {
- display: none;
-}
+  .image-overlay {
+    display: none;
+  }
+  .math {
+    display: none;
+  }
+  .text {
+    max-width: 100%;
+  }
 }
