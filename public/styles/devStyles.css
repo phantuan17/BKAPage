@@ -11,7 +11,7 @@ body {
 .image-overlay {
   position: absolute;
   top: 6%;
-  left: 50%;
+  left: 56%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 10px;
@@ -45,15 +45,14 @@ span:hover {
 }
 
 #Devsubmit {
-  aspect-ratio: 640/530;
+  aspect-ratio: 640/480;
   background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
   width: 70%;
-  height: 440px;
-  padding-top: 8%;
+  padding-top: 6%;
 }
 
 #student {
-  height: 580px;
+   aspect-ratio: 799/529.5;
 }
 
 #Devsubmit2 {
@@ -277,6 +276,7 @@ span:hover {
   }
 
   #goToMap {
+    padding-top: 4%;
     font-size: 25px;
     border-radius: 6.25vw;
   }
@@ -349,7 +349,13 @@ span:hover {
   .math {
     display: none;
   }
-  .text {
-    max-width: 100%;
+  .text p{
+    margin-left: 10%;
+    text-align: center;
+    width: 400px;
+    font-size: 15px;
+  }
+  .footer-logo img {
+    margin-left: 10%;
   }
 }
