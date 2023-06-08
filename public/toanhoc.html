@@ -92,11 +92,47 @@
     <!-- header -->
     <div id="hook" class="imgContent"></div>
     <!-- form -->
+        <div style="width: 100%; background-color: #f9f5ea; aspect-ratio: 960/175">
+      <div class="detail-item">MỘT SỐ PHẢN HỒI PHỤ HUYNH</div>
+    </div>
+    <div style="width: 100%; aspect-ratio: 960/1547; background-color: #f9f5ea">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+<img src="./media/feedback/slide1.png" alt="" width="100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./media/feedback/slide2.png" alt="" width="100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./media/feedback/slide3.png" alt="" width="100%" />
+        </div>
+
+        <div>
+          <a width="100%" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a width="100%" class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        text-align: center;
+        width: 100%;
+        aspect-ratio: 960/330;
+        background-color: #f9f5ea;
+      "
+    >
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
     <div
       id="submitForm1"
       style="
         width: 100%;
-        aspect-ratio: 960/1076;
+        aspect-ratio: 960/1160;
         background-color: #272660;
         padding-top: 7%;
       "
@@ -123,6 +159,10 @@
         />
 
         <button class="submitButton">ĐĂNG KÝ NGAY</button>
+       
+      </div>
+      <div id="vocher" >
+         <img src="./media/vocher.png" class="imgContent" alt="">
       </div>
     </div>
     <!-- quy trình -->
@@ -175,7 +215,8 @@
     <div
       id="tientrinh3"
       class="imgContent"
-      style="background-color: #f9f5ea"
+      style="background-color: #f9f5ea ;"
+      
     ></div>
     <!-- quyền lợi -->
     <div
@@ -183,54 +224,19 @@
       class="imgContent"
       style="background-color: #f9f5ea; margin-bottom: 20%"
     ></div>
-    <div class="goToRes">
+<div class="goToRes">
       <div
         class="goToResBtn"
         id="goToRes2Btn"
-        style="width: 40%; aspect-ratio: 377/90; margin-top: -15%"
+        style="width: 40%; aspect-ratio: 377/90; margin-top: -17%;" 
       >
         Đăng ký ngay
       </div>
     </div>
 
-    <div style="width: 100%; background-color: #f9f5ea; aspect-ratio: 960/175">
-      <div class="detail-item">MỘT SỐ PHẢN HỒI PHỤ HUYNH</div>
-    </div>
-    <div style="width: 100%; aspect-ratio: 960/1547; background-color: #f9f5ea">
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="./media/feedback/slide1.png" alt="" width="100%" />
-        </div>
 
-        <div class="mySlides fade">
-          <img src="./media/feedback/slide2.png" alt="" width="100%" />
-        </div>
 
-        <div class="mySlides fade">
-          <img src="./media/feedback/slide3.png" alt="" width="100%" />
-        </div>
-
-        <div>
-          <a width="100%" class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a width="100%" class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-      </div>
-    </div>
-
-    <div
-      style="
-        text-align: center;
-        width: 100%;
-        aspect-ratio: 960/300;
-        background-color: #f9f5ea;
-      "
-    >
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <div id="submitForm2" style="margin-top: 20%">
+    <div id="submitForm2" style="margin-top: 40%">
       <div class="submitForm">
         <div class="submitTitle">ĐĂNG KÝ KIỂM TRA TRÌNH ĐỘ</div>
         <input
@@ -254,9 +260,12 @@
 
         <button class="submitButton">ĐĂNG KÝ NGAY</button>
       </div>
+       <div id="vocher" >
+         <img src="./media/vocher.png" class="imgContent" alt="">
+      </div>
     </div>
 
-    <div id="registerCourse" class="imgContent" style="margin-top: -106%"></div>
+    <div id="registerCourse" class="imgContent" style="margin-top: -114%"></div>
     <div
       style="
         width: 100%;
@@ -344,7 +353,7 @@
       if ("WebSocket" in window) {
         (function () {
           function refreshCSS() {
-            var sheets = [].slice.call(document.getElementsByTagName("link"));
+var sheets = [].slice.call(document.getElementsByTagName("link"));
             var head = document.getElementsByTagName("head")[0];
             for (var i = 0; i < sheets.length; ++i) {
               var elem = sheets[i];
@@ -439,7 +448,7 @@
         headers: {
           "Content-Type": "text/plain;charset=utf-8",
         },
-      }).then((res) => {
+}).then((res) => {
         $("#loadingAl").hide();
         $("#sucessAl").show();
       });

@@ -14,14 +14,14 @@ body {
   left: 56%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   color: #ffffff;
   text-decoration: none;
   padding-right: 60px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 43px;
 }
 .math {
@@ -29,7 +29,7 @@ body {
   top: 6%;
   left: 70%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   padding: 10px;
   color: #ffff;
@@ -50,6 +50,9 @@ span:hover {
   width: 70%;
   padding-top: 6%;
 }
+#img_voucher{
+  margin-bottom: -10.8%;
+}
 
 #student {
    aspect-ratio: 799/529.5;
@@ -61,8 +64,8 @@ span:hover {
   width: 100%;
   margin-right: 5%;
   border-radius: 20px;
-  height: 400px;
-  padding-top: 10%;
+  height: 360px;
+  padding-top: 16%;
 }
 
 #map {
@@ -207,8 +210,8 @@ span:hover {
   padding-top: 20px;
   padding-left: 4vw;
   padding-right: 4vw;
-  width: 430px;
-  height: 230px;
+  width: 300px;
+  height: 170px;
   aspect-ratio: 730/500;
   background-color: white;
   box-shadow: 0px 0.41vw 1.77vw 0.41vw rgba(0, 0, 0, 0.25);
@@ -251,12 +254,14 @@ span:hover {
 }
 
 /* CSS Destop */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 920px) {
   body {
-    width: 1024px;
+    width: 920px;
     margin: auto;
   }
-
+#img_voucher {
+    margin-bottom: -12.2%;
+  }
   .txttitle {
     width: 85%;
     aspect-ratio: 700 / 60;
@@ -290,7 +295,8 @@ span:hover {
     padding-top: 27px;
     padding-left: 17px;
     padding-right: 17px;
-    width: 319px;
+    width: 220px;
+    height: 200px;
     box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
   }
@@ -322,6 +328,10 @@ span:hover {
     width: 768px;
     margin: auto;
   }
+  #img_voucher {
+   max-width: 768px;
+    margin-top: 4%;
+  }
   #map img {
     max-width: 100%;
     overflow: hidden;
@@ -340,7 +350,7 @@ span:hover {
   #Devsubmit {
     width: 100%;
     text-align: center;
-    padding-right: 90px;
+    /* padding-right: 90px; */
   }
 
   .image-overlay {
