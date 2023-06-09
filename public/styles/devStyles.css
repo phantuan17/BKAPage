@@ -10,8 +10,8 @@ body {
 }
 .image-overlay {
   position: absolute;
-  top: 6%;
-  left: 56%;
+  top: 8%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 20px;
@@ -26,8 +26,8 @@ body {
 }
 .math {
   position: absolute;
-  top: 6%;
-  left: 70%;
+  top: 8%;
+  left: 75%;
   transform: translate(-50%, -50%);
   font-size: 25px;
   text-align: center;
@@ -48,10 +48,10 @@ span:hover {
   aspect-ratio: 640/480;
   background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
   width: 70%;
-  padding-top: 6%;
+  padding-top: 4%;
 }
 #img_voucher{
-  margin-bottom: -10.8%;
+  margin-bottom: -13.8%;
 }
 
 #student {
@@ -226,7 +226,7 @@ span:hover {
 #goToMap {
   max-width: 230px;
   aspect-ratio: 485/113;
-  margin: auto;
+ margin-left: 28.5%;
   margin-bottom: 6%;
   padding-top: 2%;
   font-size: 35px;
