@@ -318,7 +318,7 @@ color: #545354;
     content: url("../media/tientrinh_left.png");
   }
   #tientrinh_right {
-    content: url("../media/tientring_right.png");
+    content: url("../media/tientrinh_right.png");
   }
 
   #tientrinh3 {
@@ -359,7 +359,7 @@ color: #545354;
 
   #submitForm1 {
     width: 100%;
-    margin-top: -25%;
+    margin-top: -10%;
   }
  
   #quytrinh {
@@ -374,7 +374,7 @@ color: #545354;
     content: url("../media/tientrinh_left.png");
   }
   #tientrinh_right {
-    content: url("../media/tientring_right.png");
+    content: url("../media/tientrinh_right.png");
   }
 
   #tientrinh3 {
