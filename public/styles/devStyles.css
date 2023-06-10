@@ -10,8 +10,8 @@ body {
 }
 .image-overlay {
   position: absolute;
-  top: 8%;
-  left: 50%;
+  top: 7%;
+  left: 55%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 20px;
@@ -26,7 +26,7 @@ body {
 }
 .math {
   position: absolute;
-  top: 8%;
+  top: 7%;
   left: 75%;
   transform: translate(-50%, -50%);
   font-size: 25px;
@@ -51,7 +51,7 @@ span:hover {
   padding-top: 4%;
 }
 #img_voucher{
-  margin-bottom: -13.8%;
+  margin-bottom: -16.7%;
 }
 
 #student {
