@@ -66,6 +66,10 @@ body {
   margin-left: 5%;
   margin-top: -9%;
 }
+#tientrinh_image {
+            overflow-x:auto;
+            overflow-y:hidden;
+}
 .submitTitle {
   position: relative;
   color: #f08234;
@@ -370,12 +374,7 @@ color: #545354;
     content: url("../media/tientrinh1.png");
   }
 
-  #tientrinh_left {
-    content: url("../media/tientrinh_left.png");
-  }
-  #tientrinh_right {
-    content: url("../media/tientrinh_right.png");
-  }
+  
 
   #tientrinh3 {
     content: url("../media/tientrinh3.png");
