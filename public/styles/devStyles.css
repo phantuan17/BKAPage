@@ -8,78 +8,23 @@ body {
   margin-left: 0%;
   margin-right: auto;
 }
-.image-overlay {
-  position: absolute;
-  top: 7%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  padding-right: 60px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 43px;
-}
-.math {
-  position: absolute;
-  top: 7%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-  text-align: center;
-  padding: 10px;
-  color: #ffff;
-  text-decoration: none;
-  padding-right: 60px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  line-height: 43px;
-}
-span:hover {
-  background-color: #f07e35;
-}
 
 #Devsubmit {
-  aspect-ratio: 640/480;
-  background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
-  width: 70%;
-  padding-top: 4%;
-}
-#img_voucher{
-  margin-bottom: -16.7%;
-}
-
-#student {
-   aspect-ratio: 799/529.5;
-}
-
-#Devsubmit2 {
   aspect-ratio: 875/623;
   background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
-  width: 100%;
-  margin-right: 5%;
-  border-radius: 20px;
-  height: 360px;
-  padding-top: 16%;
-}
-
-#map {
-  padding-left: 5%;
-  margin-right: 5%;
-  height: 550px;
+  border-radius: 6vw;
+  margin-left: 4.4%;
+  margin-bottom: 10%;
+  width: 91.2%;
+  padding-top: 5%;
 }
 
 .txttitle {
-  width: 75%;
+  width: 82%;
   aspect-ratio: 718 / 50;
   margin-left: 9.2%;
   margin-bottom: 1.5%;
-  font-size: 25px;
+  font-size: 4vw;
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 500;
@@ -87,12 +32,12 @@ span:hover {
 }
 
 .txtfield {
-  width: 75%;
+  width: 82%;
   aspect-ratio: 718 / 94;
   margin-left: 9.2%;
   margin-bottom: 3%;
-  /* padding-left: 20px; */
-  font-size: 25px;
+  padding-left: 10px;
+  font-size: 4.2vw;
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 500;
@@ -102,16 +47,15 @@ span:hover {
 }
 
 .submitbtn {
-  text-align: center;
-  width: 80%;
+  width: 82%;
   aspect-ratio: 712/127;
-  margin-left: 9%;
+  margin-left: 9.2%;
   margin-top: 3.6%;
   border: none;
   background: #4fbb84;
   border-radius: 5.2vw;
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 3.8vw;
   font-style: italic;
   font-weight: 700;
   color: #ffffff;
@@ -121,12 +65,33 @@ span:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-
+#video {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 20px;
+}
 #videobgr {
   position: absolute;
   width: 100%;
 }
 
+#videofold iframe {
+  border-radius: 10px 10px 0px 0px;
+}
+
+#link_video a {
+  padding: 39px;
+  margin-top: -2%;
+background: #c7c4c4;
+border-radius: 0px 0px 10px 10px;
+}
+#link_video a{
+text-decoration: none;
+font-family: 'Montserrat';
+font-style: italic;
+font-weight: 500;
+font-size: 14px;
+}
 #videofold {
   aspect-ratio: 960 / 843;
   position: relative;
@@ -143,8 +108,9 @@ span:hover {
 
 #vidurl {
   overflow: auto;
-  width: 67.2%;
-  margin-left: 15%;
+  width: 100%;
+  margin-left: 2%;
+  border-radius: 0px 0px 10px 10px;
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 700;
@@ -167,17 +133,16 @@ span:hover {
 #loadingAl {
   position: relative;
   margin: auto;
-  margin-top: 10%;
-  padding-top: 6.23vw;
+  margin-top: 55%;
+  padding-top: 6.45vw;
   padding-left: 4vw;
   padding-right: 4vw;
-  width: 250px;
-  height: 250px;
+  width: 75vw;
   aspect-ratio: 730/500;
   background-color: white;
   box-shadow: 0px 0.41vw 1.77vw 0.41vw rgba(0, 0, 0, 0.25);
   border-radius: 5.2vw;
-  font-size: 35px;
+  font-size: 5.2vw;
 }
 
 .loader {
@@ -206,30 +171,232 @@ span:hover {
 
 #sucessAl {
   margin: auto;
-  margin-top: 20%;
-  padding-top: 20px;
+  margin-top: 55%;
+  padding-top: 6.45vw;
   padding-left: 4vw;
   padding-right: 4vw;
-  width: 300px;
-  height: 170px;
+  width: 75vw;
   aspect-ratio: 730/500;
   background-color: white;
   box-shadow: 0px 0.41vw 1.77vw 0.41vw rgba(0, 0, 0, 0.25);
   border-radius: 5.2vw;
-  font-size: 25px;
+  font-size: 5.2vw;
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 500;
   text-align: center;
   color: black;
 }
-#goToMap {
-  max-width: 230px;
+
+#alBtn {
+  margin: auto;
+  margin-top: 3vw;
+  width: 27vw;
+  aspect-ratio: 260/85;
+  background: #4fbb84;
+  border-radius: 5.2vw;
+  padding-top: 1vw;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 5.2vw;
+  color: #ffffff;
+}
+
+/* CSS Destop */
+@media only screen and (min-width: 420px) {
+  .desktop {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .mobile {
+    display: none;
+  }
+  .image {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 0%;
+    margin-right: auto;
+  }
+  .home {
+    position: absolute;
+    top: 7%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 60px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 43px;
+  }
+  .math {
+    position: absolute;
+    top: 7%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    color: #ffff;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+  }
+  #devForm {
+    aspect-ratio: 920/373;
+    display: flex;
+    justify-content: space-between;
+  }
+  #student {
+    aspect-ratio: 250/185;
+  }
+  #Devsubmit1 {
+    aspect-ratio: 420/300;
+  background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
+  margin-bottom: 10%;
+  width: 91.2%;
+  padding-top: 4%;
+}
+  .txttitle1 {
+   width: 70%;
+  aspect-ratio: 718 / 50;
+  margin-left: 9.2%;
+  margin-bottom: 1.5%;
+  font-size: 1.6vw;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  color: #ffffff;
+  }
+
+.txtfield1{
+  width: 70%;
+  aspect-ratio: 718 / 94;
+  margin-left: 9.2%;
+  margin-bottom: 3%;
+  padding-left: 10px;
+  font-size: 1.6vw;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  color: #000000;
+  border-radius: 2vw;
+  border: none;
+}
+
+.submitbtn1 {
+  width: 72%;
+  aspect-ratio: 712/127;
+  margin-left: 9.2%;
+  margin-top: 3.6%;
+  border: none;
+  background: #4fbb84;
+  border-radius: 5.2vw;
+  font-family: "Montserrat";
+  font-size: 1.6vw;
+  font-style: italic;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#submitbtn1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Devsubmit {
+  aspect-ratio: 875/623;
+  background: linear-gradient(52.41deg, #f08134 -2.12%, #f8b12a 94.26%);
+  border-radius: 6vw;
+  margin-left: 4.4%;
+  margin-bottom: 10%;
+  width: 91.2%;
+}
+  .txttitle {
+   width: 70%;
+  aspect-ratio: 718 / 50;
+  margin-left: 9.2%;
+  margin-bottom: 1.5%;
+  font-size: 1.7vw;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  color: #ffffff;
+  }
+
+.txtfield{
+  width: 70%;
+  aspect-ratio: 718 / 94;
+  margin-left: 9.2%;
+  margin-bottom: 3%;
+  padding-left: 10px;
+  font-size: 1.7vw;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  color: #000000;
+  border-radius: 2vw;
+  border: none;
+}
+
+.submitbtn {
+  width: 72%;
+  aspect-ratio: 712/127;
+  margin-left: 9.2%;
+  margin-top: 3.6%;
+  border: none;
+  background: #4fbb84;
+  border-radius: 5.2vw;
+  font-family: "Montserrat";
+  font-size: 1.7vw;
+  font-style: italic;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#submitbtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#voucher{
+  margin-top: 4%;
+}
+#voucher1 {
+   width: 91.3%;
+  margin-left: 4.4%;
+  margin-top: -22%;
+}
+
+  #vidurl {
+    line-height: 22px;
+    font-size: 16px;
+  }
+ #vidurl1 {
+    overflow: auto;
+    width: 67.2%;
+    margin-left: 15%;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 5.1vw;
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 4vw;
+    color: #000000;
+}
+  #goToMap {
+  width: 30%;
   aspect-ratio: 485/113;
- margin-left: 28.5%;
+  margin: auto;
   margin-bottom: 6%;
-  padding-top: 2%;
-  font-size: 35px;
+  padding-top: 1.35%;
+  font-size: 15px;
   color: white;
   font-family: "Montserrat";
   font-weight: 600;
@@ -238,65 +405,12 @@ span:hover {
   border-radius: 26px;
 }
 
-#alBtn {
-  margin: auto;
-  margin-top: 3vw;
-  width: 120px;
-  aspect-ratio: 260/85;
-  background: #4fbb84;
-  border-radius: 5.2vw;
-  padding-top: 1vw;
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 700;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-/* CSS Destop */
-@media only screen and (min-width: 920px) {
-  body {
-    width: 920px;
-    margin: auto;
-  }
-#img_voucher {
-    margin-bottom: -17.5%;
-  }
-  .txttitle {
-    width: 85%;
-    aspect-ratio: 700 / 60;
-  }
-
-  .txtfield {
-    border-radius: 10px;
-    width: 85%;
-    aspect-ratio: 700 / 60;
-  }
-
-  .submitbtn {
-    font-size: 20px;
-    border-radius: 20px;
-    width: 85%;
-    aspect-ratio: 700 / 80;
-  }
-
-  #goToMap {
-    padding-top: 4%;
-    font-size: 25px;
-    border-radius: 6.25vw;
-  }
-  #vidurl {
-    line-height: 22px;
-    font-size: 2.5vw;
-  }
-
   #loadingAl {
     margin-top: 10%;
     padding-top: 27px;
     padding-left: 17px;
     padding-right: 17px;
-    width: 220px;
-    height: 200px;
+    width: 319px;
     box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
   }
@@ -322,50 +436,12 @@ span:hover {
     font-size: 22px;
   }
 }
-
-@media (max-width: 768px) {
-  body {
-    width: 768px;
+@media only screen and (max-width: 420px) {
+  .mobile {
+    width: 420px;
     margin: auto;
   }
-  #img_voucher {
-   max-width: 768px;
-    margin-top: 4%;
-  }
-  #map img {
-    max-width: 100%;
-    overflow: hidden;
-  }
-  #lienhe img {
-    max-width: 100%;
-  }
-  #Devsubmit2 {
-    overflow: hidden;
-    max-width: 100%;
-    text-align: center;
-  }
-  #student {
+  .desktop {
     display: none;
-  }
-  #Devsubmit {
-    width: 100%;
-    text-align: center;
-    /* padding-right: 90px; */
-  }
-
-  .image-overlay {
-    display: none;
-  }
-  .math {
-    display: none;
-  }
-  .text p{
-    margin-left: 10%;
-    text-align: center;
-    width: 400px;
-    font-size: 15px;
-  }
-  .footer-logo img {
-    margin-left: 10%;
   }
 }

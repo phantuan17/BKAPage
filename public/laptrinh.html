@@ -75,13 +75,70 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap"
     rel="stylesheet"
   />
+ <body>
+  <div class="mobile">
+  <img class="image" id="devHook" src="media/devHook.png">
+    <img class="image" id="devCourse" src="media/devCourse.png">
+    <img class="image" id="devPpht" src="media/devPpht.png">
 
-  <body>
-    <div class="image">
+    <div id="Devsubmit">
+        <div class="txttitle">Họ tên học sinh</div>
+        <input class="txtfield" type="text" id="name1" name="fname"><br>
+        <div class="txttitle">Số điện thoại phụ huynh</div>
+        <input class="txtfield" type="text" id="phone1" name="fname"><br>
+        <button class="submitbtn" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
+    </div>
+
+    <img class="image" id="devStudent" src="media/devStudent.png">
+    <img class="image" id="devRobot" src="media/devRobot.png">
+    <img class="image" id="devModule" src="media/devModule.png">
+    <img class="image" id="devEvent" src="media/devEvent.png">
+    <img class="image" id="devTools" src="media/devTools.png">
+
+    <div style="position: relative;">
+        <img id="videobgr" src="media/devBgrvid.png">
+        <div id="videofold" class="image">
+            <iframe id="videodemo" src="https://www.youtube.com/embed/MC7hAS9Eh8A" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A"> Video 30s demo online - YouTube</a>
+        </div>
+    </div>
+
+    <img class="image" id="devDki" src="media/devDki.png">
+
+    <div id="Devsubmit">
+        <div class="txttitle">Họ tên học sinh</div>
+        <input class="txtfield" type="text" id="name1" name="fname"><br>
+        <div class="txttitle">Số điện thoại phụ huynh</div>
+        <input class="txtfield" type="text" id="phone1" name="fname"><br>
+        <button class="submitbtn" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
+    </div>
+
+    <img class="image" id="devFooter" src="media/devFooter.png">
+
+    <div id="alert" style="display: none;">
+        <div id="sucessAl" style="display: none;">
+            Đăng ký thành công!<br>
+            BK Academy sẽ liên lạc Với anh chị trong thời gian sớm nhất!
+            <div id="alBtn">
+                Đóng
+            </div>
+        </div>
+        <div id="loadingAl" style="display: none;">
+            <div class="loader">
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="desktop">
+   
+    <div id="header">
       <div style="text-align: center">
         <img src="./media/hook3.png" alt="Ảnh" class="image" />
         <a href="./index.html">
-          <span class="image-overlay">Trang Chủ</span>
+          <span class="home">Trang Chủ</span>
         </a>
         <a href="./toanhoc.html">
           <span class="math">Toán Học</span>
@@ -97,36 +154,37 @@
         style="margin-left: 35px; margin-right: 35px"
       />
     </div>
-    <div id="form" style="display: flex; justify-content: space-between">
+    <div id="devForm">
       <div id="student">
-        <img class="image" id="student" src="media/devStudent.png" />
+        <img class="image"  src="media/devStudent.png" />
       </div>
 
-      <div id="Devsubmit">
-        <div class="txttitle">Họ tên học sinh</div>
-        <input class="txtfield" type="text" id="name1" name="fname" /><br />
-        <div class="txttitle">Số điện thoại phụ huynh</div>
-        <input class="txtfield" type="text" id="1" name="fname" /><br />
-        <button class="submitbtn" type="button">
+      <div id="Devsubmit1">
+        <div class="txttitle1">Họ tên học sinh</div>
+        <input class="txtfield1" type="text" id="name1" name="fname" /><br />
+        <div class="txttitle1">Số điện thoại phụ huynh</div>
+        <input class="txtfield1" type="text" id="1" name="fname" /><br />
+        <button class="submitbtn1" type="button">
           ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ
         </button>
         <div id="voucher">
           <img
             src="./media/vocher1.png"
             class="image"
-            id="img_voucher"
+
             alt=""
           />
         </div>
       </div>
     </div>
 
-    <img src="./media/devRobot1.png" class="image" alt="" />
+    <img src="./media/dev_robot1.jpg" class="image" alt="" />
+    <img src="./media/dev_module.jpg" class="image" alt="" />
     <img src="./media/about_dev.png" class="image" alt="" />
-    <img src="./media/hocDev.jpg" class="image" alt="" />
+    <img src="./media/dev_hoc.jpg" style="margin-top: 4%; margin-bottom:4% " class="image" alt="" />
 
-    <div style="position: relative; overflow: hidden">
-      <img id="videobgr" src="media/devBgrvid.png" />
+    <div id="video" style="position: relative; overflow: hidden">
+     
       <div id="videofold" class="image">
         <iframe
           id="videodemo"
@@ -135,9 +193,48 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+         <div id="link_video">
+           <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A"> Video 30s demo online - YouTube</a>
+        </div>
+      </div>
+      <div id="videofold" class="image">
+        <iframe
+          id="videodemo"
+          src="https://www.youtube.com/embed/MC7hAS9Eh8A"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+         <div id="link_video">
+           <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A"> Video 30s demo online - YouTube</a>
+        </div>
+      </div>
+      <div id="videofold" class="image">
+        <iframe
+          id="videodemo"
+          src="https://www.youtube.com/embed/MC7hAS9Eh8A"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div id="link_video">
+           <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A"> Video 30s demo online - YouTube</a>
+        </div>
       </div>
     </div>
 
+    <img class="image" style="margin-top: 5%;" src="media/hoc_dev.jpg" />
+    <img class="image" style="margin-top: 5%;" src="media/dev_duan.jpg" />
+
+       <div style="position: relative;">
+        <img id="videobgr" src="media/devBgrvid.png">
+        <div id="videofold" class="image">
+            <iframe id="videodemo" src="https://www.youtube.com/embed/MC7hAS9Eh8A" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <a id="vidurl1" href="https://youtu.be/MC7hAS9Eh8A"> Video 30s demo online - YouTube</a>
+        </div>
+    </div>
     <img class="image" id="devDki" src="media/devDki.png" />
 
     <div
@@ -155,7 +252,7 @@
       </div>
 
       <div>
-        <div id="Devsubmit2">
+        <div id="Devsubmit">
           <div class="txttitle">Họ tên học sinh</div>
           <input class="txtfield" type="text" id="name1" name="fname" /><br />
           <div class="txttitle">Số điện thoại phụ huynh</div>
@@ -164,12 +261,11 @@
             ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ
           </button>
         </div>
-        <img
-          src="./media/vocher.png"
-          style="width: 100%;; margin-top: -20%"
-          class="image"
-          alt=""
+        <div id="voucher1">
+           <img
+          src="./media/vocher.png"class="image"alt=""
         />
+        </div>
         <div id="lienhe" class="image" style="margin-top: 17%">
           <img src="./media/phone.png" class="image" alt="" />
         </div>
@@ -284,7 +380,9 @@
         <div class="loader"></div>
       </div>
     </div>
-  </body>
+
+  </div>
+</body>
   <script>
     function submitStudent(name, grade, phone, testMath, testDev, src) {
       $("#alert").show();
