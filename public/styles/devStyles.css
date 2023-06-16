@@ -218,6 +218,10 @@ body {
     width: 1024px;
     margin: 0 auto;
   }
+  #video_mobile{
+    display: none;
+  }
+  
   .mobile {
     display: none;
   }
@@ -358,7 +362,7 @@ body {
   }
 
   /* video */
-  #video {
+  #video_desktop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -509,11 +513,12 @@ body {
   .desktop {
     display: none;
   }
-
+#video_desktop{
+  display: none;
+}
   #videodemo {
     border-radius: 10px 10px 0px 0px;
   }
-
   .video-popup {
     display: none;
     position: fixed;
