@@ -8,6 +8,36 @@ body {
   margin-left: 0%;
   margin-right: auto;
 }
+ .home {
+    position: absolute;
+    top: 7%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 60px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 43px;
+  }
+  .math {
+    position: absolute;
+    top: 7%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    color: #ffff;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+  }
 
 #Devsubmit {
   aspect-ratio: 875/623;
@@ -188,6 +218,10 @@ body {
     width: 1024px;
     margin: 0 auto;
   }
+  #video_mobile{
+    display: none;
+  }
+  
   .mobile {
     display: none;
   }
@@ -197,36 +231,7 @@ body {
     margin-left: 0%;
     margin-right: auto;
   }
-  .home {
-    position: absolute;
-    top: 7%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    padding-right: 60px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 43px;
-  }
-  .math {
-    position: absolute;
-    top: 7%;
-    left: 68%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    text-align: center;
-    color: #ffff;
-    text-decoration: none;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    line-height: 43px;
-  }
+
   #devForm {
     aspect-ratio: 1024/373;
     display: flex;
@@ -357,7 +362,7 @@ body {
   }
 
   /* video */
-  #video {
+  #video_desktop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -451,7 +456,7 @@ body {
     line-height: 5.1vw;
     text-align: center;
     text-decoration-line: underline;
-    font-size: 3vw;
+    font-size: 2vw;
     color: #000000;
   }
   #goToMap {
@@ -508,11 +513,12 @@ body {
   .desktop {
     display: none;
   }
-
+#video_desktop{
+  display: none;
+}
   #videodemo {
     border-radius: 10px 10px 0px 0px;
   }
-
   .video-popup {
     display: none;
     position: fixed;
