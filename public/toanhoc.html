@@ -89,455 +89,235 @@
   />
 
   <body>
-    <div class="mobile">
-      <!-- header -->
-      <div id="hook" class="imgContent"></div>
-      <!-- form -->
-      <div
-        style="width: 100%; background-color: #f9f5ea; aspect-ratio: 960/175"
-      >
-        <div class="detail-item">MỘT SỐ PHẢN HỒI PHỤ HUYNH</div>
-      </div>
-      <div
-        style="width: 100%; aspect-ratio: 960/1547; background-color: #f9f5ea"
-      >
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="./media/feedback/slide1.png" alt="" width="100%" />
-          </div>
+    <!-- header -->
+    <div id="hook" class="imgContent"></div>
+    <!-- form -->
+        <div style="width: 100%; background-color: #f9f5ea; aspect-ratio: 960/175">
+      <div class="detail-item">MỘT SỐ PHẢN HỒI PHỤ HUYNH</div>
+    </div>
+    <div style="width: 100%; aspect-ratio: 960/1547; background-color: #f9f5ea">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+<img src="./media/feedback/slide1.png" alt="" width="100%" />
+        </div>
 
-          <div class="mySlides fade">
-            <img src="./media/feedback/slide2.png" alt="" width="100%" />
-          </div>
+        <div class="mySlides fade">
+          <img src="./media/feedback/slide2.png" alt="" width="100%" />
+        </div>
 
-          <div class="mySlides fade">
-            <img src="./media/feedback/slide3.png" alt="" width="100%" />
-          </div>
+        <div class="mySlides fade">
+          <img src="./media/feedback/slide3.png" alt="" width="100%" />
+        </div>
 
-          <div>
-            <a width="100%" class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a width="100%" class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
+        <div>
+          <a width="100%" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a width="100%" class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
+    </div>
 
-      <div
-        style="
-          text-align: center;
-          width: 100%;
-          aspect-ratio: 960/200;
-          background-color: #f9f5ea;
-        "
-      >
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+    <div
+      style="
+        text-align: center;
+        width: 100%;
+        aspect-ratio: 960/200;
+        background-color: #f9f5ea;
+      "
+    >
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div
+      id="submitForm1"
+      style="
+        width: 100%;
+        aspect-ratio: 960/1160;
+        background-color: #272660;
+        padding-top: 10%;
+      "
+    >
+      <div class="submitForm">
+        <div class="submitTitle">ĐĂNG KÝ NHẬN TƯ VẤN</div>
+        <input
+          type="text"
+          id="fname"
+          class="textField"
+          placeholder="Họ tên học sinh"
+        />
+        <input
+          type="text"
+          id="fname"
+          class="textField"
+          placeholder="Con đang học lớp mấy?"
+        />
+        <input
+          type="text"
+          id="fname"
+          class="textField"
+          placeholder="Số điện thoại phụ huynh"
+        />
+
+        <button class="submitButton">ĐĂNG KÝ NGAY</button>
+       
       </div>
-      <div
-        id="submitForm1"
-        style="
-          width: 100%;
-          aspect-ratio: 960/1160;
-          background-color: #272660;
-          padding-top: 10%;
-        "
-      >
-        <div class="submitForm">
-          <div class="submitTitle">ĐĂNG KÝ NHẬN TƯ VẤN</div>
-          <input
-            type="text"
-            id="fname"
-            class="textField"
-            placeholder="Họ tên học sinh"
-          />
-          <input
-            type="text"
-            id="fname"
-            class="textField"
-            placeholder="Con đang học lớp mấy?"
-          />
-          <input
-            type="text"
-            id="fname"
-            class="textField"
-            placeholder="Số điện thoại phụ huynh"
-          />
-
-          <button class="submitButton">ĐĂNG KÝ NGAY</button>
-        </div>
-        <div id="vocher">
-          <img src="./media/vocher.png" class="imgContent" alt="" />
-        </div>
+      <div id="vocher" >
+         <img src="./media/vocher.png" class="imgContent" alt="">
       </div>
-      <!-- quy trình -->
-      <div
-        id="quytrinh"
-        class="imgContent"
-        style="background-color: #f9f5ea"
-      ></div>
+    </div>
+    <!-- quy trình -->
+    <div
+      id="quytrinh"
+      class="imgContent"
+      style="background-color: #f9f5ea"
+    ></div>
 
-      <!-- tiến trình -->
-      <div
-        id="tientrinh1"
-        class="imgContent"
-        style="background-color: #f9f5ea"
-      ></div>
+    <!-- tiến trình -->
+    <div
+      id="tientrinh1"
+      class="imgContent"
+      style="background-color: #f9f5ea"
+    ></div>
 
-      <div id="tientrinh_image" class="imgContent">
-        <img src="./media/Group308.png" style="width: 800px" alt="" />
-      </div>
-
-      <div
-        id="tientrinh3"
-        class="imgContent"
-        style="background-color: #f9f5ea"
-      ></div>
-      <!-- quyền lợi -->
-      <div
-        id="quyenloi"
-        class="imgContent"
-        style="background-color: #f9f5ea; margin-bottom: 20%"
-      ></div>
-      <div class="goToRes">
-        <div
-          class="goToResBtn"
-          id="goToRes2Btn"
-          style="width: 40%; aspect-ratio: 377/90; margin-top: -17%"
-        >
-          Đăng ký ngay
-        </div>
-      </div>
-
-      <div id="submitForm2" style="margin-top: 40%">
-        <div class="submitForm">
-          <div class="submitTitle">ĐĂNG KÝ KIỂM TRA TRÌNH ĐỘ</div>
-          <input
-            type="text"
-            id="fname"
-            class="textField"
-            placeholder="Họ tên học sinh"
-          />
-          <input
-            type="text"
-            id="fname"
-            class="textField"
-            placeholder="Con đang học lớp mấy?"
-          />
-          <input
-            type="text"
-            id="fname"
-            class="textField"
-            placeholder="Số điện thoại phụ huynh"
-          />
-
-          <button class="submitButton">ĐĂNG KÝ NGAY</button>
-        </div>
-        <div id="vocher">
-          <img src="./media/vocher.png" class="imgContent" alt="" />
-        </div>
-      </div>
-
-      <div
-        id="registerCourse"
-        class="imgContent"
-        style="margin-top: -114%"
-      ></div>
-      <div
-        style="
-          width: 100%;
-          aspect-ratio: 960/970;
-          background-color: #272660;
-          margin-top: -30%;
-        "
-      ></div>
-
-      <img
-        style="margin-top: 30%"
-        class="imgContent"
-        src="./media/add1.png"
-        alt="add"
-      />
-      <div id="goToMap">
-        Chỉ đường bằng <br />
-        Ứng dụng Bản đồ
-      </div>
-      <div
-        id="teamIntro"
-        class="imgContent"
-        style="background-color: #ffff"
-      ></div>
-
-      <div
-        style="
-          position: relative;
-          background-color: #272660;
-          text-align: center;
-          aspect-ratio: 960/527;
-        "
-      >
-        <br />
-        <a
-          href="./index.html"
-          style="
-            color: #f9f5ea;
-            text-decoration: none;
-            padding-right: 60px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 17px;
-            line-height: 43px;
-            /* identical to box height */
-
-            color: #ffffff;
-          "
-          >Trang Chủ</a
-        >
-        <a
-          href="./laptrinh.html"
-          style="
-            color: #f9f5ea;
-            text-decoration: none;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 17px;
-            line-height: 43px;
-            /* identical to box height */
-
-            color: #ffffff;
-          "
-          >Lập trình</a
-        >
-
-        <div id="footer" class="imgContent"></div>
-      </div>
-   <div class="thongbao">
-       <div id="alert" style="display: none">
-        <div id="sucessAl" style="display: none">
-          Đăng ký thành công!<br />
-          BK Academy sẽ liên lạc Với anh chị trong thời gian sớm nhất!
-          <div id="alBtn">Đóng</div>
-        </div>
-        <div id="loadingAl" style="display: none">
-          <div class="loader"></div>
-        </div>
-      </div>
+   <div id="tientrinh_image" class="imgContent">
+    <img src="./media/Group308.png" style="width: 800px; " alt="">
    </div>
-      <!-- Code injected by live-server -->
-    </div>
 
-    <div class="desktop">
-      <div id="header">
-        <div style="text-align: center">
-          <img src="./media/banner.jpg" class="imgContent" alt="" />
-          <a href="./index.html">
-            <span class="home">Trang Chủ</span>
-          </a>
-          <a href="./laptrinh.html">
-            <span class="math">Lập Trình</span>
-          </a>
-          <div id="tile-form">
-            <div class="submitForm_desktop">
-              <div class="form-banner">
-                <div class="submitTitle">
-                ĐĂNG KÝ KIỂM TRA LỖ HỔNG KIẾN THỨC MÔN TOÁN
-              </div>
-              <input
-                type="text"
-                id="fname"
-                class="textField"
-                placeholder="Họ tên học sinh"
-              />
-              <input
-                type="text"
-                id="fname"
-                class="textField"
-                placeholder="Con đang học lớp mấy?"
-              />
-              <input
-                type="text"
-                id="fname"
-                class="textField"
-                placeholder="Số điện thoại phụ huynh"
-              />
-
-              <button class="submitButton">ĐĂNG KÝ NGAY</button>
-              </div>
-              <br>
-              <div id="voucher">
-            <img src="./media/vocher.png" alt=""  srcset="">
-          </div>
-            </div>
-          
-          </div>
-        </div>
-      </div>
-      <div id="main">
-        <div class="tile-hocvien">
-          <img src="./media/tile-hocvien.jpg" alt="" />
-            <img src="./media/Group308.png" alt="">
-          <img src="./media/tile-hocthu.jpg" alt="">
-        
-          <img src="./media/tile-botro.jpg" alt="">
-        </div>
-        <div class="sub-footer">
-          <img src="./media/tile-subfooter.jpg" class="imgContent" alt="">
-          
-
-        <div class="footer-form">
-           <div id="map">
-          <img src="./media/map.png" id="map" class="imgContent" alt />
-          <div id="goToMap"><a href="https://maps.app.goo.gl/arAnxNQZ9BjNMHXf7?g_st=ic" style="text-decoration: none; color: #ffff;">Chỉ đường</a></div>
-        </div>
-         <div class="submitTitle1">
-               <div class="submitForm_footer">
-                <h3> ĐĂNG KÝ KIỂM TRA LỖ HỔNG KIẾN THỨC MÔN TOÁN</h2>
-              
-              <input
-                type="text"
-                id="fname"
-                class="textField"
-                placeholder="Họ tên học sinh"
-              />
-              <input
-                type="text"
-                id="fname"
-                class="textField"
-                placeholder="Con đang học lớp mấy?"
-              />
-              <input
-                type="text"
-                id="fname"
-                class="textField"
-                placeholder="Số điện thoại phụ huynh"
-              />
-
-              <button class="submitButton">ĐĂNG KÝ NGAY</button>
-              <div id="voucher1">
-            <img src="./media/vocher.png" class="imgContent" alt />
-          </div>
-               </div>
-              
-          <div id="lienhe" class="image" style="margin-top: 10%">
-            <img src="./media/phone.png" class="imgContent" alt />
-          </div>
-            </div>
-          
-        </div>
-        <div
-        style="
-          position: relative;
-          background-color: #272660;
-          text-align: center;
-          aspect-ratio: 960/180;
-        "
+    <div
+      id="tientrinh3"
+      class="imgContent"
+      style="background-color: #f9f5ea ;"
+      
+    ></div>
+    <!-- quyền lợi -->
+    <div
+      id="quyenloi"
+      class="imgContent"
+      style="background-color: #f9f5ea; margin-bottom: 20%"
+    ></div>
+<div class="goToRes">
+      <div
+        class="goToResBtn"
+        id="goToRes2Btn"
+        style="width: 40%; aspect-ratio: 377/90; margin-top: -17%;" 
       >
-        <br />
-        <a
-          href="./index.html"
-          style="
-            color: #f9f5ea;
-            text-decoration: none;
-            padding-right: 100px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 25px;
-            line-height: 43px;
-            /* identical to box height */
-
-            color: #ffffff;
-          "
-          >Trang Chủ</a
-        >
-        <a
-          href="./laptrinh.html"
-          style="
-            text-decoration: none;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 25px;
-            line-height: 43px;
-            /* identical to box height */
-
-            color: #ffffff;
-          "
-          >Lập Trình</a
-        >
-
-        <div
-          id="footer"
-          class="image"
-          style="
-            display: grid;
-            grid-template-columns: 35% 65%;
-            grid-gap: 30px;
-            margin-top: 3%;
-            margin-right: 3%;
-          "
-        >
-          <div class="footer-logo">
-            <img
-              src="./media/logo1.png"
-              class="image"
-              style="max-width: 250px; margin-right: 10%"
-              alt
-            />
-          </div>
-          <div class="footer-menu">
-            <div
-              class="tile"
-              style="
-                color: #ffffff;
-                font-family: 'Montserrat';
-                margin-bottom: 10%;
-                padding-right: 2%;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 24px;
-              "
-            >
-              <div class="text" style="width: 580px">
-                <p>
-                  Số 17/A10 KĐT Geleximco, An Khánh, Hoài Đức, Hà Nội Hotline:
-                </p>
-                <p style="margin-right: 45.6%">
-                  0963.209.309 (có sử dụng Zalo)
-                </p>
-                <a
-                  href="https://www.facebook.com/bkacademy.edu.vn"
-                  style="
-                    text-decoration: none;
-                    color: #ffffff;
-                    margin-right: 30.3%;
-                  "
-                >
-                  Fanpage:www.fb.com/bkacademy.edu.vn</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+        Đăng ký ngay
       </div>
-        </div>
-      </div>
-     <div class="thongbao_desktop">
-        <div id="alert" style="display: none">
-        <div id="sucessAl" style="display: none">
-          Đăng ký thành công!<br />
-          BK Academy sẽ liên lạc Với anh chị trong thời gian sớm nhất!
-          <div id="alBtn">Đóng</div>
-        </div>
-        <div id="loadingAl" style="display: none">
-          <div class="loader"></div>
-        </div>
-      </div>
-     </div>
     </div>
-   
-  </body>
-  <script src="../main/toanhoc.js"></script>
+
+
+
+    <div id="submitForm2" style="margin-top: 40%">
+      <div class="submitForm">
+        <div class="submitTitle">ĐĂNG KÝ KIỂM TRA TRÌNH ĐỘ</div>
+        <input
+          type="text"
+          id="fname"
+          class="textField"
+          placeholder="Họ tên học sinh"
+        />
+        <input
+          type="text"
+          id="fname"
+          class="textField"
+          placeholder="Con đang học lớp mấy?"
+        />
+        <input
+          type="text"
+          id="fname"
+          class="textField"
+          placeholder="Số điện thoại phụ huynh"
+        />
+
+        <button class="submitButton">ĐĂNG KÝ NGAY</button>
+      </div>
+       <div id="vocher" >
+         <img src="./media/vocher.png" class="imgContent" alt="">
+      </div>
+    </div>
+
+    <div id="registerCourse" class="imgContent" style="margin-top: -114%"></div>
+    <div
+      style="
+        width: 100%;
+        aspect-ratio: 960/970;
+        background-color: #272660;
+        margin-top: -30%;
+      "
+    ></div>
+
+    <img
+      style="margin-top: 30%"
+      class="imgContent"
+      src="./media/add1.png"
+      alt="add"
+    />
+    <div id="goToMap">
+      Chỉ đường bằng <br />
+      Ứng dụng Bản đồ
+    </div>
+    <div
+      id="teamIntro"
+      class="imgContent"
+      style="background-color: #ffff"
+    ></div>
+
+    <div
+      style="
+        position: relative;
+        background-color: #272660;
+        text-align: center;
+        aspect-ratio: 960/527;
+      "
+    >
+      <br />
+      <a
+        href="./index.html"
+        style="
+          color: #f9f5ea;
+          text-decoration: none;
+          padding-right: 60px;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 17px;
+          line-height: 43px;
+          /* identical to box height */
+
+          color: #ffffff;
+          
+        "
+        >Trang Chủ</a
+      >
+      <a
+        href="./laptrinh.html"
+        style="
+          color: #f9f5ea;
+          text-decoration: none;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 17px;
+          line-height: 43px;
+          /* identical to box height */
+
+          color: #ffffff;
+        "
+        >Lập trình</a
+      >
+
+      <div id="footer" class="imgContent" ></div>
+    </div>
+    <div id="alert" style="display: none">
+      <div id="sucessAl" style="display: none">
+        Đăng ký thành công!<br />
+        BK Academy sẽ liên lạc Với anh chị trong thời gian sớm nhất!
+        <div id="alBtn">Đóng</div>
+      </div>
+      <div id="loadingAl" style="display: none">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <!-- Code injected by live-server -->
+<script src="./main/toanhoc.js"></script>
 </html>
