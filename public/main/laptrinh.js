@@ -47,7 +47,7 @@ $(".submitbtn").on("click", function (event) {
     });
   } else {
     var src = window.location.href;
-    submitStudent(name, "null", phone, false, true, src);
+    submitStudent(name, grade, phone, false, true, src);
   }
 });
 
