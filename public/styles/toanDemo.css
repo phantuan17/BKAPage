@@ -484,7 +484,7 @@ body {
   }
   #voucher2 img {
     width: 100%;
-    margin-bottom: -18%;
+    margin-bottom: -15%;
   }
 
   /* footer */
@@ -664,7 +664,7 @@ body {
   /* form */
   #form1 {
     width: 100%;
-    aspect-ratio: 960/1280;
+    aspect-ratio: 960/1300;
     background-color: #272660;
     padding-top: 10%;
     margin-top: -10%;
@@ -687,6 +687,7 @@ body {
     color: #f08234;
     text-align: center;
     font-weight: 600;
+    margin-bottom: -5%;
   }
 
   .textField {
@@ -705,7 +706,6 @@ body {
     position: relative;
     width: 80%;
     margin-top: 6%;
-    margin-bottom: 10%;
     margin-left: 10%;
     background: linear-gradient(180deg, #f07e35 0%, #f8b12a 100%);
     border-radius: 26px;
@@ -715,14 +715,18 @@ body {
     font-weight: 600;
     color: #ffffff;
   }
+ 
 
   #submitButton:hover {
     box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.24),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }
+  #submit1{
+    margin-bottom: 4%;
+  }
   #voucher img {
     width: 100%;
-    margin-bottom: -10%;
+    margin-bottom: -16%;
   }
   /* content */
 
@@ -779,17 +783,21 @@ body {
     font-family: "Montserrat";
     font-weight: 500;
   }
+  
+   #submit2{
+     margin-bottom: 8%;
+  }
   #voucher2 img {
     width: 100%;
-    margin-bottom: -16%;
+    margin-bottom: -17%;
   }
   #registerCourse {
-    margin-top: -110%;
+    margin-top: -113%;
     content: url("../media/registerCourse1.png");
   }
   /* map */
   #map {
-    margin-top: 25%;
+    margin-top: 28%;
     content: url("../media/add1.png");
   }
   #goToMap1 {
