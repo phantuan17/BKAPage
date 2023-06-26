@@ -23,6 +23,9 @@ app.get('/', (req, res) => {
 app.get('/toan-hoc', (req, res) => {
     res.sendFile(path.join(__dirname) + '/public/toanhoc.html')
 })
+app.get('/toan-demo', (req, res) => {
+    res.sendFile(path.join(__dirname) + '/public/toanDemo.html')
+})
 
 app.get('/lap-trinh', (req, res) => {
     res.sendFile(path.join(__dirname) + '/public/laptrinh.html')
