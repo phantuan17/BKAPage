@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+  <title>Lập trình robot</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function () {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
+        }
+      }
+      (k = e.createElement(t)),
+        (a = e.getElementsByTagName(t)[0]),
+        (k.async = 1),
+        (k.src = r),
+        a.parentNode.insertBefore(k, a);
+    })(
+      window,
+      document,
+      "script",
+      "https://mc.yandex.ru/metrika/tag.js",
+      "ym"
+    );
+
+    ym(93673371, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      ecommerce: "dataLayer",
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/93673371" style="position: absolute; left: -9999px" alt />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0J2QCVCM21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-0J2QCVCM21");
+</script>
+<link rel="stylesheet" href="styles/laptrinhDemo.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,500;1,700&display=swap"
+  rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet" />
+
+<body>
+  <!-- banner -->
+  <div id="banner" class="image"></div>
+  <!-- menu -->
+  <div id="menu">
+    <a href="./index.html">
+      <span class="home">Trang Chủ</span>
+    </a>
+    <a href="./laptrinh.html">
+      <span class="math">Lập Trình</span>
+    </a>
+  </div>
+  <!-- information -->
+  <div id="content1">
+    <div id="information" class="image"></div>
+    <div id="information1" class="image"></div>
+  </div>
+  <!-- method -->
+  <div id="method" class="image"></div>
+  <!-- form -->
+  <div id="form">
+    <div id="devStudent" class="image"></div>
+    <div id="Devsubmit">
+      <div class="txttitle">Họ tên học sinh</div>
+      <input class="txtfield" type="text" id="name1" name="fname"><br>
+      <div class="txttitle">Số điện thoại phụ huynh</div>
+      <input class="txtfield" type="text" id="phone1" name="fname"><br>
+      <button class="submitbtn" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
+      <div id="voucher">
+        <img src="./media/vocher1.png" class="image" alt="">
+      </div>
+    </div>
+    <div id="Student" class="image"></div>
+  </div>
+  <!-- item -->
+  <div id="content">
+    <div id="item1" class="image"></div>
+    <div id="item2" class="image"></div>
+    <div id="item3" class="image"></div>
+    <div id="item4" class="image"></div>
+  </div>
+  <!-- video -->
+  <div id="video">
+    <!-- 1 -->
+    <div class="video-container">
+
+      <div id="videof">
+        <iframe id="videodemo" src="https://www.youtube.com/embed/aE6HO8XgfoY" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <!-- Popup video -->
+      <div id="videoPopup" class="video-popup">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+        <iframe src="https://www.youtube.com/embed/aE6HO8XgfoY" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-thumbnail">
+        <button class="video-popup-button"  id="data-video" onclick="openVideoPopup(0)">
+          Học Sinh Gia Lập Thuyết trình về sản phẩm Robot tự lập trình
+        </button>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="video-container">
+
+      <div id="videof">
+        <iframe id="videodemo" src="https://www.youtube.com/embed/0mZ6UJ96DUg" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <!-- Popup video -->
+      <div id="videoPopup" class="video-popup">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+        <iframe src="https://www.youtube.com/embed/0mZ6UJ96DUg" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-thumbnail">
+        <button class="video-popup-button"  id="data-video" onclick="openVideoPopup()">
+          Học Sinh Bảo Nam Thuyết trình về sản phẩm Robot tự lập trình
+        </button>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="video-container">
+
+      <div id="videof">
+        <iframe id="videodemo" src="https://www.youtube.com/embed/mJ4i_PBn5Cs" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <!-- Popup video -->
+      <div id="videoPopup" class="video-popup">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+        <iframe src="https://www.youtube.com/embed/mJ4i_PBn5Cs" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-thumbnail">
+        <button class="video-popup-button"  id="data-video" onclick="openVideoPopup()">
+          Học Sinh Quỳnh Anh Thuyết trình về sản phẩm Robot tự lập trình
+        </button>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div class="video-container">
+
+      <div id="videof">
+        <iframe id="videodemo" src="https://www.youtube.com/embed/pkKktfzkHv8" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <!-- Popup video -->
+      <div id="videoPopup" class="video-popup">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+        <iframe src="https://www.youtube.com/embed/pkKktfzkHv8" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-thumbnail">
+        <button class="video-popup-button"  id="data-video"onclick="openVideoPopup()">
+          Học Sinh Kim Anh Thuyết trình về sản phẩm Robot tự lập trình
+        </button>
+      </div>
+    </div>
+    <!-- 5 -->
+    <div class="video-container">
+
+      <div id="videof">
+        <iframe id="videodemo" src="https://www.youtube.com/embed/qLzO-LQco8A" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <!-- Popup video -->
+      <div id="videoPopup" class="video-popup">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+        <iframe src="https://www.youtube.com/embed/qLzO-LQco8A" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-thumbnail">
+        <button class="video-popup-button" id="data-video" onclick="openVideoPopup()">
+          Học Sinh Đạt Tín Thuyết trình về sản phẩm Robot tự lập trình
+        </button>
+      </div>
+    </div>
+    <!-- 6 -->
+    <div class="video-container">
+
+      <div id="videof">
+        <iframe id="videodemo" src="https://www.youtube.com/embed/l_KArLKxhZc" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <!-- Popup video -->
+      <div id="videoPopup" class="video-popup">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+        <iframe src="https://www.youtube.com/embed/l_KArLKxhZc" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-thumbnail">
+        <button class="video-popup-button" id="data-video" onclick="openVideoPopup()">
+          Học Sinh Thùy Chi Thuyết trình về sản phẩm Robot tự lập trình
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- item -->
+  <div id="content">
+    <div id="item5" class="image"></div>
+    <div id="item6" class="image"></div>
+  </div>
+  <!-- video_demo -->
+  <div style="position: relative; margin-top: 20%;">
+    <img id="videobgr" class="image" src="media/devBgrvid.png">
+    <div id="videofold" class="image">
+      <iframe id="video30" src="https://www.youtube.com/embed/MC7hAS9Eh8A" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <a id="vidurl" href="https://youtu.be/MC7hAS9Eh8A"> Video 30s demo
+        online - YouTube</a>
+    </div>
+  </div>
+  <!-- register for school -->
+  <div id="content">
+    <div id="register" class="image"></div>
+  </div>
+  <!-- map -->
+  <div class="form_map">
+    <div>
+      <div id="map1" class="image"></div>
+      <div id="map" class="image"></div>
+      <div id="goToMap">
+        Chỉ đường <br />
+      </div>
+    </div>
+    <div>
+      <div id="Devsubmit2">
+        <div class="txttitle">Họ tên học sinh</div>
+        <input class="txtfield" type="text" id="name1" name="fname"><br>
+        <div class="txttitle">Số điện thoại phụ huynh</div>
+        <input class="txtfield" type="text" id="phone1" name="fname"><br>
+        <button class="submitbtn" type="button">ĐĂNG KÝ TRẢI NGHIỆM MIỄN PHÍ</button>
+        <div id="voucher2">
+          <img src="./media/vocher.png" class="image" alt="">
+        </div>
+      </div>
+      <div id="content">
+        <div id="register" class="image"></div>
+      </div>
+    </div>
+
+  </div>
+ <!-- footer -->
+    <div
+        style="
+          position: relative;
+          background-color: #272660;
+          text-align: center;
+          aspect-ratio: 960/180;
+        "
+      >
+        <br />
+        <a
+          href="./index.html"
+          style="
+            color: #f9f5ea;
+            text-decoration: none;
+            padding-right: 100px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 43px;
+            /* identical to box height */
+
+            color: #ffffff;
+          "
+          >Trang Chủ</a
+        >
+        <a
+          href="./laptrinh.html"
+          style="
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 43px;
+            /* identical to box height */
+
+            color: #ffffff;
+          "
+          >Lập Trình</a
+        >
+
+        <div
+          id="footer"
+          class="imgContent"
+        >
+          <div id="logo">
+            <img
+              src="./media/logo1.png"
+              class="image"
+              style="max-width: 250px; margin-right: 10%"
+              alt
+            />
+          </div>
+          <div class="footer-menu">
+            <div
+              class="tile"
+              style="
+                color: #ffffff;
+                font-family: 'Montserrat';
+                margin-bottom: 10%;
+                padding-right: 2%;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+              "
+            >
+              <div class="text" >
+                <p>
+                  Số 17/A10 KĐT Geleximco, An Khánh, Hoài Đức, Hà Nội Hotline:
+                </p>
+                <p style="margin-right: 40%">
+                  0963.209.309 (có sử dụng Zalo)
+                </p>
+                <a
+                  href="https://www.facebook.com/bkacademy.edu.vn"
+                  style="
+                    text-decoration: none;
+                    color: #ffffff;
+                    margin-right: 26.4%;
+                  "
+                >
+                  Fanpage:www.fb.com/bkacademy.edu.vn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- thong bao -->
+  <div id="alert" style="display: none;">
+    <div id="sucessAl" style="display: none;">
+      Đăng ký thành công!<br>
+      BK Academy sẽ liên lạc Với anh chị trong thời gian sớm nhất!
+      <div id="alBtn">
+        Đóng
+      </div>
+    </div>
+    <div id="loadingAl" style="display: none;">
+      <div class="loader">
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="./main/laptrinh.js"></script>
+
+</html>
