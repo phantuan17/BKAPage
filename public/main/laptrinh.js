@@ -47,7 +47,7 @@ $(".submitbtn").on("click", function (event) {
     });
   } else {
     var src = window.location.href;
-    submitStudent(name, grade, phone, false, true, src);
+    submitStudent(name, null, phone, false, true, src);
   }
 });
 
@@ -67,23 +67,13 @@ $("#goDev").on("click", function (event) {
 });
 
 // link_youtube
-document.addEventListener("DOMContentLoaded", function () {
-  var popupButtons = document.querySelectorAll(".video-popup-button");
-  var videoPopup = document.querySelector(".video-popup");
-  var videoClose = document.querySelector(".video-popup-close");
-  var videoIframe = document.querySelector(".video-popup-content iframe");
+function openVideoPopup() {
+  var videoPopup = document.getElementById("videoPopup");
+  videoPopup.style.display = "block";
+}
 
-  popupButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var videoId = button.getAttribute("data-video-id");
-      var videoUrl = "https://www.youtube.com/embed/" + videoId;
-      videoIframe.src = videoUrl;
-      videoPopup.style.display = "block";
-    });
-  });
-
-  videoClose.addEventListener("click", function () {
-    videoPopup.style.display = "none";
-    videoIframe.src = "";
-  });
-});
+// Đóng popup video
+function closeVideoPopup() {
+  var videoPopup = document.getElementById("videoPopup");
+  videoPopup.style.display = "none";
+}
