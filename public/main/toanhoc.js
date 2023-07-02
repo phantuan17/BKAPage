@@ -1,14 +1,6 @@
 
 
-$("#goToMap").on("click", function (event) {
-  window.open("https://maps.app.goo.gl/arAnxNQZ9BjNMHXf7?g_st=ic", "_blank");
-});
-$("#goMath").on("click", function (event) {
-  window.open("toan-hoc", "_self");
-});
-$("#goDev").on("click", function (event) {
-  window.open("lap-trinh", "_self");
-});
+
 
 // form_mobile
 function submitStudent(name, grade, phone, testMath, testDev, src) {
@@ -90,6 +82,28 @@ $(".submitButton").on("click", function (event) {
 $("#alBtn").on("click", function (event) {
   $("#alert").hide();
   $("#sucessAl").hide();
+});
+
+// map
+$("#goToMap").on("click", function (event) {
+  window.open("https://maps.app.goo.gl/arAnxNQZ9BjNMHXf7?g_st=ic", "_blank");
+});
+$("#goMath").on("click", function (event) {
+  window.open("toan-hoc", "_self");
+});
+$("#goDev").on("click", function (event) {
+  window.open("lap-trinh", "_self");
+});
+
+// map1
+$("#goToMap1").on("click", function (event) {
+  window.open("https://maps.app.goo.gl/arAnxNQZ9BjNMHXf7?g_st=ic", "_blank");
+});
+$("#goMath").on("click", function (event) {
+  window.open("toan-hoc", "_self");
+});
+$("#goDev").on("click", function (event) {
+  window.open("lap-trinh", "_self");
 });
 
 $("#goToRes3Btn").on("click", function (event) {
