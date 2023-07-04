@@ -15,15 +15,25 @@ app.use(express.json());
 app.use(express.urlencoded({
     extended: true
 }));
-
+// home
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname) + '/public/homepage.html')
 })
-
+app.get('/home', (req, res) => {
+    res.sendFile(path.join(__dirname) + '/public/homepage.html')
+})
+// toanhoc
 app.get('/toan-hoc', (req, res) => {
     res.sendFile(path.join(__dirname) + '/public/toanhoc.html')
 })
+app.get('/math1', (req, res) => {
+    res.sendFile(path.join(__dirname) + '/public/toanhoc.html')
+})
+// laptrinh
 app.get('/lap-trinh', (req, res) => {
+    res.sendFile(path.join(__dirname) + '/public/laptrinh.html')
+})
+app.get('/robotcoding1', (req, res) => {
     res.sendFile(path.join(__dirname) + '/public/laptrinh.html')
 })
 
